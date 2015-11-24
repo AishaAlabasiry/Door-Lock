@@ -1,0 +1,2099 @@
+
+ECU1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000b14  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000134  00800060  00000b14  00000ba8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000025  00800194  00800194  00000cdc  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000cdc  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000168  00000000  00000000  00000d0c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00001bd0  00000000  00000000  00000e74  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000071f  00000000  00000000  00002a44  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000007df  00000000  00000000  00003163  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  0000039c  00000000  00000000  00003944  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000005eb  00000000  00000000  00003ce0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000013a4  00000000  00000000  000042cb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000130  00000000  00000000  0000566f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 72 00 	jmp	0xe4	; 0xe4 <__ctors_end>
+   4:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+   8:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+   c:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  10:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  14:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  18:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  1c:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  20:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  24:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  28:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  2c:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  30:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  34:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  38:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  3c:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  40:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  44:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  48:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  4c:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  50:	0c 94 8f 00 	jmp	0x11e	; 0x11e <__bad_interrupt>
+  54:	a9 00       	.word	0x00a9	; ????
+  56:	a0 00       	.word	0x00a0	; ????
+  58:	a3 00       	.word	0x00a3	; ????
+  5a:	a6 00       	.word	0x00a6	; ????
+  5c:	ab 00       	.word	0x00ab	; ????
+  5e:	ab 00       	.word	0x00ab	; ????
+  60:	ab 00       	.word	0x00ab	; ????
+  62:	ab 00       	.word	0x00ab	; ????
+  64:	ab 00       	.word	0x00ab	; ????
+  66:	ab 00       	.word	0x00ab	; ????
+  68:	ab 00       	.word	0x00ab	; ????
+  6a:	ab 00       	.word	0x00ab	; ????
+  6c:	ab 00       	.word	0x00ab	; ????
+  6e:	ab 00       	.word	0x00ab	; ????
+  70:	ab 00       	.word	0x00ab	; ????
+  72:	ab 00       	.word	0x00ab	; ????
+  74:	ab 00       	.word	0x00ab	; ????
+  76:	ab 00       	.word	0x00ab	; ????
+  78:	ab 00       	.word	0x00ab	; ????
+  7a:	ab 00       	.word	0x00ab	; ????
+  7c:	ab 00       	.word	0x00ab	; ????
+  7e:	ab 00       	.word	0x00ab	; ????
+  80:	ab 00       	.word	0x00ab	; ????
+  82:	ab 00       	.word	0x00ab	; ????
+  84:	ab 00       	.word	0x00ab	; ????
+  86:	ab 00       	.word	0x00ab	; ????
+  88:	ab 00       	.word	0x00ab	; ????
+  8a:	ab 00       	.word	0x00ab	; ????
+  8c:	ab 00       	.word	0x00ab	; ????
+  8e:	ab 00       	.word	0x00ab	; ????
+  90:	ab 00       	.word	0x00ab	; ????
+  92:	ab 00       	.word	0x00ab	; ????
+  94:	a9 00       	.word	0x00a9	; ????
+  96:	a0 00       	.word	0x00a0	; ????
+  98:	a3 00       	.word	0x00a3	; ????
+  9a:	a6 00       	.word	0x00a6	; ????
+  9c:	e3 00       	.word	0x00e3	; ????
+  9e:	da 00       	.word	0x00da	; ????
+  a0:	dd 00       	.word	0x00dd	; ????
+  a2:	e0 00       	.word	0x00e0	; ????
+  a4:	e5 00       	.word	0x00e5	; ????
+  a6:	e5 00       	.word	0x00e5	; ????
+  a8:	e5 00       	.word	0x00e5	; ????
+  aa:	e5 00       	.word	0x00e5	; ????
+  ac:	e5 00       	.word	0x00e5	; ????
+  ae:	e5 00       	.word	0x00e5	; ????
+  b0:	e5 00       	.word	0x00e5	; ????
+  b2:	e5 00       	.word	0x00e5	; ????
+  b4:	e5 00       	.word	0x00e5	; ????
+  b6:	e5 00       	.word	0x00e5	; ????
+  b8:	e5 00       	.word	0x00e5	; ????
+  ba:	e5 00       	.word	0x00e5	; ????
+  bc:	e5 00       	.word	0x00e5	; ????
+  be:	e5 00       	.word	0x00e5	; ????
+  c0:	e5 00       	.word	0x00e5	; ????
+  c2:	e5 00       	.word	0x00e5	; ????
+  c4:	e5 00       	.word	0x00e5	; ????
+  c6:	e5 00       	.word	0x00e5	; ????
+  c8:	e5 00       	.word	0x00e5	; ????
+  ca:	e5 00       	.word	0x00e5	; ????
+  cc:	e5 00       	.word	0x00e5	; ????
+  ce:	e5 00       	.word	0x00e5	; ????
+  d0:	e5 00       	.word	0x00e5	; ????
+  d2:	e5 00       	.word	0x00e5	; ????
+  d4:	e5 00       	.word	0x00e5	; ????
+  d6:	e5 00       	.word	0x00e5	; ????
+  d8:	e5 00       	.word	0x00e5	; ????
+  da:	e5 00       	.word	0x00e5	; ????
+  dc:	e3 00       	.word	0x00e3	; ????
+  de:	da 00       	.word	0x00da	; ????
+  e0:	dd 00       	.word	0x00dd	; ????
+  e2:	e0 00       	.word	0x00e0	; ????
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf e5       	ldi	r28, 0x5F	; 95
+  ea:	d4 e0       	ldi	r29, 0x04	; 4
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+
+000000f0 <__do_copy_data>:
+  f0:	11 e0       	ldi	r17, 0x01	; 1
+  f2:	a0 e6       	ldi	r26, 0x60	; 96
+  f4:	b0 e0       	ldi	r27, 0x00	; 0
+  f6:	e4 e1       	ldi	r30, 0x14	; 20
+  f8:	fb e0       	ldi	r31, 0x0B	; 11
+  fa:	02 c0       	rjmp	.+4      	; 0x100 <__do_copy_data+0x10>
+  fc:	05 90       	lpm	r0, Z+
+  fe:	0d 92       	st	X+, r0
+ 100:	a4 39       	cpi	r26, 0x94	; 148
+ 102:	b1 07       	cpc	r27, r17
+ 104:	d9 f7       	brne	.-10     	; 0xfc <__do_copy_data+0xc>
+
+00000106 <__do_clear_bss>:
+ 106:	21 e0       	ldi	r18, 0x01	; 1
+ 108:	a4 e9       	ldi	r26, 0x94	; 148
+ 10a:	b1 e0       	ldi	r27, 0x01	; 1
+ 10c:	01 c0       	rjmp	.+2      	; 0x110 <.do_clear_bss_start>
+
+0000010e <.do_clear_bss_loop>:
+ 10e:	1d 92       	st	X+, r1
+
+00000110 <.do_clear_bss_start>:
+ 110:	a9 3b       	cpi	r26, 0xB9	; 185
+ 112:	b2 07       	cpc	r27, r18
+ 114:	e1 f7       	brne	.-8      	; 0x10e <.do_clear_bss_loop>
+ 116:	0e 94 df 01 	call	0x3be	; 0x3be <main>
+ 11a:	0c 94 88 05 	jmp	0xb10	; 0xb10 <_exit>
+
+0000011e <__bad_interrupt>:
+ 11e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000122 <DIO_setPinDirection>:
+#include "dio.h"
+
+/*------------------------------------- FUNCTION Definitions --------------------------------------*/
+/*--------------------------------------- DIO_setPinDirection ----------------------------------------*/
+void DIO_setPinDirection(const DioConfig* a_CONFIG_MSG_Ptr)
+{
+ 122:	cf 93       	push	r28
+ 124:	df 93       	push	r29
+ 126:	ec 01       	movw	r28, r24
+	/* local pointer to hold the address for the required DDR Register */
+	uint8* ddr_Ptr;
+	/* point to the required DDR Register depending on structure port value */
+	switch(a_CONFIG_MSG_Ptr->s_port)
+ 128:	48 81       	ld	r20, Y
+ 12a:	50 e0       	ldi	r21, 0x00	; 0
+ 12c:	41 54       	subi	r20, 0x41	; 65
+ 12e:	51 09       	sbc	r21, r1
+ 130:	44 32       	cpi	r20, 0x24	; 36
+ 132:	51 05       	cpc	r21, r1
+ 134:	80 f4       	brcc	.+32     	; 0x156 <DIO_setPinDirection+0x34>
+ 136:	46 5d       	subi	r20, 0xD6	; 214
+ 138:	5f 4f       	sbci	r21, 0xFF	; 255
+ 13a:	fa 01       	movw	r30, r20
+ 13c:	0c 94 60 05 	jmp	0xac0	; 0xac0 <__tablejump2__>
+		case 'a': 
+			ddr_Ptr = &DDRA;
+			break;
+		case 'B':
+		case 'b': 
+			ddr_Ptr = &DDRB;
+ 140:	a7 e3       	ldi	r26, 0x37	; 55
+ 142:	b0 e0       	ldi	r27, 0x00	; 0
+			break;
+ 144:	08 c0       	rjmp	.+16     	; 0x156 <DIO_setPinDirection+0x34>
+		case 'C':
+		case 'c': 
+			ddr_Ptr = &DDRC;
+ 146:	a4 e3       	ldi	r26, 0x34	; 52
+ 148:	b0 e0       	ldi	r27, 0x00	; 0
+			break;
+ 14a:	05 c0       	rjmp	.+10     	; 0x156 <DIO_setPinDirection+0x34>
+		case 'D':
+		case 'd': 
+			ddr_Ptr = &DDRD;
+ 14c:	a1 e3       	ldi	r26, 0x31	; 49
+ 14e:	b0 e0       	ldi	r27, 0x00	; 0
+			break;
+ 150:	02 c0       	rjmp	.+4      	; 0x156 <DIO_setPinDirection+0x34>
+	/* point to the required DDR Register depending on structure port value */
+	switch(a_CONFIG_MSG_Ptr->s_port)
+	{
+		case 'A':
+		case 'a': 
+			ddr_Ptr = &DDRA;
+ 152:	aa e3       	ldi	r26, 0x3A	; 58
+ 154:	b0 e0       	ldi	r27, 0x00	; 0
+		default:
+			break;		  		  		  
+	}
+	
+	/* check if user need to make PIN direction OUTPUT*/
+	if(a_CONFIG_MSG_Ptr->s_direction == OUTPUT)
+ 156:	8a 81       	ldd	r24, Y+2	; 0x02
+ 158:	81 30       	cpi	r24, 0x01	; 1
+ 15a:	61 f4       	brne	.+24     	; 0x174 <DIO_setPinDirection+0x52>
+	{
+		/* set the corresponding bit in the DDR register to configure it as OUTPUT pin */
+		SETBIT(*ddr_Ptr,a_CONFIG_MSG_Ptr->s_pinNum); 
+ 15c:	81 e0       	ldi	r24, 0x01	; 1
+ 15e:	90 e0       	ldi	r25, 0x00	; 0
+ 160:	09 80       	ldd	r0, Y+1	; 0x01
+ 162:	02 c0       	rjmp	.+4      	; 0x168 <DIO_setPinDirection+0x46>
+ 164:	88 0f       	add	r24, r24
+ 166:	99 1f       	adc	r25, r25
+ 168:	0a 94       	dec	r0
+ 16a:	e2 f7       	brpl	.-8      	; 0x164 <DIO_setPinDirection+0x42>
+ 16c:	9c 91       	ld	r25, X
+ 16e:	89 2b       	or	r24, r25
+ 170:	8c 93       	st	X, r24
+ 172:	0e c0       	rjmp	.+28     	; 0x190 <DIO_setPinDirection+0x6e>
+	}
+	/* check if user need to make PIN direction INPUT*/
+	else if(a_CONFIG_MSG_Ptr->s_direction == INPUT)	
+ 174:	81 11       	cpse	r24, r1
+ 176:	0c c0       	rjmp	.+24     	; 0x190 <DIO_setPinDirection+0x6e>
+	{
+		/* clear the corresponding bit in the DDR register to configure it as INPUT pin */
+		CLEARBIT(*ddr_Ptr,a_CONFIG_MSG_Ptr->s_pinNum);
+ 178:	81 e0       	ldi	r24, 0x01	; 1
+ 17a:	90 e0       	ldi	r25, 0x00	; 0
+ 17c:	09 80       	ldd	r0, Y+1	; 0x01
+ 17e:	02 c0       	rjmp	.+4      	; 0x184 <DIO_setPinDirection+0x62>
+ 180:	88 0f       	add	r24, r24
+ 182:	99 1f       	adc	r25, r25
+ 184:	0a 94       	dec	r0
+ 186:	e2 f7       	brpl	.-8      	; 0x180 <DIO_setPinDirection+0x5e>
+ 188:	80 95       	com	r24
+ 18a:	9c 91       	ld	r25, X
+ 18c:	89 23       	and	r24, r25
+ 18e:	8c 93       	st	X, r24
+	}				
+}
+ 190:	df 91       	pop	r29
+ 192:	cf 91       	pop	r28
+ 194:	08 95       	ret
+
+00000196 <DIO_writePin>:
+
+/*---------------------------------------- DIO_Write_Pin ----------------------------------------*/
+void DIO_writePin(const DioConfig* a_STATE_Ptr)
+{
+ 196:	cf 93       	push	r28
+ 198:	df 93       	push	r29
+ 19a:	ec 01       	movw	r28, r24
+	/* local pointer to hold the address for the required PORT Register */
+	uint8* port_Ptr;
+	/* point to the required DDR Register depending on structure port value */
+	switch(a_STATE_Ptr->s_port)
+ 19c:	48 81       	ld	r20, Y
+ 19e:	50 e0       	ldi	r21, 0x00	; 0
+ 1a0:	41 54       	subi	r20, 0x41	; 65
+ 1a2:	51 09       	sbc	r21, r1
+ 1a4:	44 32       	cpi	r20, 0x24	; 36
+ 1a6:	51 05       	cpc	r21, r1
+ 1a8:	80 f4       	brcc	.+32     	; 0x1ca <DIO_writePin+0x34>
+ 1aa:	42 5b       	subi	r20, 0xB2	; 178
+ 1ac:	5f 4f       	sbci	r21, 0xFF	; 255
+ 1ae:	fa 01       	movw	r30, r20
+ 1b0:	0c 94 60 05 	jmp	0xac0	; 0xac0 <__tablejump2__>
+		case 'a': 
+			port_Ptr = &PORTA;
+			break;
+		case 'B':
+		case 'b': 
+			port_Ptr = &PORTB;
+ 1b4:	a8 e3       	ldi	r26, 0x38	; 56
+ 1b6:	b0 e0       	ldi	r27, 0x00	; 0
+			break;
+ 1b8:	08 c0       	rjmp	.+16     	; 0x1ca <DIO_writePin+0x34>
+		case 'C':
+		case 'c': 
+			port_Ptr = &PORTC;
+ 1ba:	a5 e3       	ldi	r26, 0x35	; 53
+ 1bc:	b0 e0       	ldi	r27, 0x00	; 0
+			break;
+ 1be:	05 c0       	rjmp	.+10     	; 0x1ca <DIO_writePin+0x34>
+		case 'D':
+		case 'd': 
+			port_Ptr = &PORTD;
+ 1c0:	a2 e3       	ldi	r26, 0x32	; 50
+ 1c2:	b0 e0       	ldi	r27, 0x00	; 0
+			break;
+ 1c4:	02 c0       	rjmp	.+4      	; 0x1ca <DIO_writePin+0x34>
+	/* point to the required DDR Register depending on structure port value */
+	switch(a_STATE_Ptr->s_port)
+	{
+		case 'A':
+		case 'a': 
+			port_Ptr = &PORTA;
+ 1c6:	ab e3       	ldi	r26, 0x3B	; 59
+ 1c8:	b0 e0       	ldi	r27, 0x00	; 0
+			break;
+		default:
+			break;		  		  		  
+	}
+	/* check if user need to write LOGIC HIGH on OUTPUT PIN */
+	if(a_STATE_Ptr->s_value == LOGIC_HIGH)
+ 1ca:	8b 81       	ldd	r24, Y+3	; 0x03
+ 1cc:	81 30       	cpi	r24, 0x01	; 1
+ 1ce:	61 f4       	brne	.+24     	; 0x1e8 <DIO_writePin+0x52>
+	{
+		/* set the corresponding pin in the PORT register */
+		SETBIT(*port_Ptr,a_STATE_Ptr->s_pinNum); 
+ 1d0:	81 e0       	ldi	r24, 0x01	; 1
+ 1d2:	90 e0       	ldi	r25, 0x00	; 0
+ 1d4:	09 80       	ldd	r0, Y+1	; 0x01
+ 1d6:	02 c0       	rjmp	.+4      	; 0x1dc <DIO_writePin+0x46>
+ 1d8:	88 0f       	add	r24, r24
+ 1da:	99 1f       	adc	r25, r25
+ 1dc:	0a 94       	dec	r0
+ 1de:	e2 f7       	brpl	.-8      	; 0x1d8 <DIO_writePin+0x42>
+ 1e0:	9c 91       	ld	r25, X
+ 1e2:	89 2b       	or	r24, r25
+ 1e4:	8c 93       	st	X, r24
+ 1e6:	0e c0       	rjmp	.+28     	; 0x204 <DIO_writePin+0x6e>
+	}
+	/* check if user need to write LOGIC LOW on OUTPUT PIN */				
+    else if(a_STATE_Ptr->s_value == LOGIC_LOW)
+ 1e8:	81 11       	cpse	r24, r1
+ 1ea:	0c c0       	rjmp	.+24     	; 0x204 <DIO_writePin+0x6e>
+	{
+		/* clear the corresponding pin in the PORT register */
+        CLEARBIT(*port_Ptr,a_STATE_Ptr->s_pinNum); 
+ 1ec:	81 e0       	ldi	r24, 0x01	; 1
+ 1ee:	90 e0       	ldi	r25, 0x00	; 0
+ 1f0:	09 80       	ldd	r0, Y+1	; 0x01
+ 1f2:	02 c0       	rjmp	.+4      	; 0x1f8 <DIO_writePin+0x62>
+ 1f4:	88 0f       	add	r24, r24
+ 1f6:	99 1f       	adc	r25, r25
+ 1f8:	0a 94       	dec	r0
+ 1fa:	e2 f7       	brpl	.-8      	; 0x1f4 <DIO_writePin+0x5e>
+ 1fc:	80 95       	com	r24
+ 1fe:	9c 91       	ld	r25, X
+ 200:	89 23       	and	r24, r25
+ 202:	8c 93       	st	X, r24
+	}		
+}
+ 204:	df 91       	pop	r29
+ 206:	cf 91       	pop	r28
+ 208:	08 95       	ret
+
+0000020a <ECU1_getPass>:
+	}
+}
+
+// This function get pass from user
+void ECU1_getPass()
+{
+ 20a:	0f 93       	push	r16
+ 20c:	1f 93       	push	r17
+ 20e:	cf 93       	push	r28
+ 210:	df 93       	push	r29
+ 212:	c3 eb       	ldi	r28, 0xB3	; 179
+ 214:	d1 e0       	ldi	r29, 0x01	; 1
+ 216:	08 eb       	ldi	r16, 0xB8	; 184
+ 218:	11 e0       	ldi	r17, 0x01	; 1
+	uint8 i;
+	for (i=0; i<5; i++)
+	{
+		Passwrd[i] = KeyPad_getPressedKey();
+ 21a:	0e 94 55 03 	call	0x6aa	; 0x6aa <KeyPad_getPressedKey>
+ 21e:	89 93       	st	Y+, r24
+		 		
+		if (Passwrd[i]== '*' || Passwrd[i]== '#')
+ 220:	8a 32       	cpi	r24, 0x2A	; 42
+ 222:	11 f0       	breq	.+4      	; 0x228 <ECU1_getPass+0x1e>
+ 224:	83 32       	cpi	r24, 0x23	; 35
+ 226:	19 f4       	brne	.+6      	; 0x22e <ECU1_getPass+0x24>
+			LCD_displayCharacter(Passwrd[i]);
+ 228:	0e 94 6b 04 	call	0x8d6	; 0x8d6 <LCD_displayCharacter>
+ 22c:	07 c0       	rjmp	.+14     	; 0x23c <ECU1_getPass+0x32>
+		else
+ 			LCD_displayNumber(Passwrd[i], 10);
+ 22e:	68 2f       	mov	r22, r24
+ 230:	70 e0       	ldi	r23, 0x00	; 0
+ 232:	80 e0       	ldi	r24, 0x00	; 0
+ 234:	90 e0       	ldi	r25, 0x00	; 0
+ 236:	4a e0       	ldi	r20, 0x0A	; 10
+ 238:	0e 94 7e 04 	call	0x8fc	; 0x8fc <LCD_displayNumber>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 23c:	2f ef       	ldi	r18, 0xFF	; 255
+ 23e:	80 e7       	ldi	r24, 0x70	; 112
+ 240:	92 e0       	ldi	r25, 0x02	; 2
+ 242:	21 50       	subi	r18, 0x01	; 1
+ 244:	80 40       	sbci	r24, 0x00	; 0
+ 246:	90 40       	sbci	r25, 0x00	; 0
+ 248:	e1 f7       	brne	.-8      	; 0x242 <ECU1_getPass+0x38>
+ 24a:	00 c0       	rjmp	.+0      	; 0x24c <ECU1_getPass+0x42>
+ 24c:	00 00       	nop
+
+		_delay_ms(100);
+		LCD_sendCommand(LCD_MOVE_CURSOR_LEFT);
+ 24e:	80 e1       	ldi	r24, 0x10	; 16
+ 250:	0e 94 3b 04 	call	0x876	; 0x876 <LCD_sendCommand>
+		LCD_displayCharacter('*');
+ 254:	8a e2       	ldi	r24, 0x2A	; 42
+ 256:	0e 94 6b 04 	call	0x8d6	; 0x8d6 <LCD_displayCharacter>
+ 25a:	2f ef       	ldi	r18, 0xFF	; 255
+ 25c:	80 e7       	ldi	r24, 0x70	; 112
+ 25e:	92 e0       	ldi	r25, 0x02	; 2
+ 260:	21 50       	subi	r18, 0x01	; 1
+ 262:	80 40       	sbci	r24, 0x00	; 0
+ 264:	90 40       	sbci	r25, 0x00	; 0
+ 266:	e1 f7       	brne	.-8      	; 0x260 <ECU1_getPass+0x56>
+ 268:	00 c0       	rjmp	.+0      	; 0x26a <ECU1_getPass+0x60>
+ 26a:	00 00       	nop
+
+// This function get pass from user
+void ECU1_getPass()
+{
+	uint8 i;
+	for (i=0; i<5; i++)
+ 26c:	c0 17       	cp	r28, r16
+ 26e:	d1 07       	cpc	r29, r17
+ 270:	a1 f6       	brne	.-88     	; 0x21a <ECU1_getPass+0x10>
+		_delay_ms(100);
+		LCD_sendCommand(LCD_MOVE_CURSOR_LEFT);
+		LCD_displayCharacter('*');
+		_delay_ms(100);
+	}
+}
+ 272:	df 91       	pop	r29
+ 274:	cf 91       	pop	r28
+ 276:	1f 91       	pop	r17
+ 278:	0f 91       	pop	r16
+ 27a:	08 95       	ret
+
+0000027c <ECU1_sendPassToMCU2>:
+
+void ECU1_sendPassToMCU2()
+{
+ 27c:	0f 93       	push	r16
+ 27e:	1f 93       	push	r17
+ 280:	cf 93       	push	r28
+ 282:	df 93       	push	r29
+ 284:	2f ef       	ldi	r18, 0xFF	; 255
+ 286:	81 ee       	ldi	r24, 0xE1	; 225
+ 288:	94 e0       	ldi	r25, 0x04	; 4
+ 28a:	21 50       	subi	r18, 0x01	; 1
+ 28c:	80 40       	sbci	r24, 0x00	; 0
+ 28e:	90 40       	sbci	r25, 0x00	; 0
+ 290:	e1 f7       	brne	.-8      	; 0x28a <ECU1_sendPassToMCU2+0xe>
+ 292:	00 c0       	rjmp	.+0      	; 0x294 <ECU1_sendPassToMCU2+0x18>
+ 294:	00 00       	nop
+ 296:	c3 eb       	ldi	r28, 0xB3	; 179
+ 298:	d1 e0       	ldi	r29, 0x01	; 1
+ 29a:	08 eb       	ldi	r16, 0xB8	; 184
+ 29c:	11 e0       	ldi	r17, 0x01	; 1
+	uint8 i;
+	_delay_ms(200);
+	for (i=0; i<5; i++)
+	{
+		UART_sendByte(Passwrd[i]);
+ 29e:	89 91       	ld	r24, Y+
+ 2a0:	0e 94 39 05 	call	0xa72	; 0xa72 <UART_sendByte>
+ 2a4:	2f ef       	ldi	r18, 0xFF	; 255
+ 2a6:	80 e7       	ldi	r24, 0x70	; 112
+ 2a8:	92 e0       	ldi	r25, 0x02	; 2
+ 2aa:	21 50       	subi	r18, 0x01	; 1
+ 2ac:	80 40       	sbci	r24, 0x00	; 0
+ 2ae:	90 40       	sbci	r25, 0x00	; 0
+ 2b0:	e1 f7       	brne	.-8      	; 0x2aa <ECU1_sendPassToMCU2+0x2e>
+ 2b2:	00 c0       	rjmp	.+0      	; 0x2b4 <ECU1_sendPassToMCU2+0x38>
+ 2b4:	00 00       	nop
+
+void ECU1_sendPassToMCU2()
+{
+	uint8 i;
+	_delay_ms(200);
+	for (i=0; i<5; i++)
+ 2b6:	c0 17       	cp	r28, r16
+ 2b8:	d1 07       	cpc	r29, r17
+ 2ba:	89 f7       	brne	.-30     	; 0x29e <ECU1_sendPassToMCU2+0x22>
+	{
+		UART_sendByte(Passwrd[i]);
+		_delay_ms(100);
+	}
+}
+ 2bc:	df 91       	pop	r29
+ 2be:	cf 91       	pop	r28
+ 2c0:	1f 91       	pop	r17
+ 2c2:	0f 91       	pop	r16
+ 2c4:	08 95       	ret
+
+000002c6 <ECU1_getPassFromMCU2>:
+
+void ECU1_getPassFromMCU2()
+{
+ 2c6:	0f 93       	push	r16
+ 2c8:	1f 93       	push	r17
+ 2ca:	cf 93       	push	r28
+ 2cc:	df 93       	push	r29
+	uint8 i;
+	UART_sendByte('G');
+ 2ce:	87 e4       	ldi	r24, 0x47	; 71
+ 2d0:	0e 94 39 05 	call	0xa72	; 0xa72 <UART_sendByte>
+ 2d4:	2f ef       	ldi	r18, 0xFF	; 255
+ 2d6:	80 e7       	ldi	r24, 0x70	; 112
+ 2d8:	92 e0       	ldi	r25, 0x02	; 2
+ 2da:	21 50       	subi	r18, 0x01	; 1
+ 2dc:	80 40       	sbci	r24, 0x00	; 0
+ 2de:	90 40       	sbci	r25, 0x00	; 0
+ 2e0:	e1 f7       	brne	.-8      	; 0x2da <ECU1_getPassFromMCU2+0x14>
+ 2e2:	00 c0       	rjmp	.+0      	; 0x2e4 <ECU1_getPassFromMCU2+0x1e>
+ 2e4:	00 00       	nop
+ 2e6:	c3 eb       	ldi	r28, 0xB3	; 179
+ 2e8:	d1 e0       	ldi	r29, 0x01	; 1
+ 2ea:	08 eb       	ldi	r16, 0xB8	; 184
+ 2ec:	11 e0       	ldi	r17, 0x01	; 1
+	_delay_ms(100);
+	for (i=0; i<5; i++)
+	{
+		Passwrd[i] = UART_recieveByte();
+ 2ee:	0e 94 3d 05 	call	0xa7a	; 0xa7a <UART_recieveByte>
+ 2f2:	89 93       	st	Y+, r24
+void ECU1_getPassFromMCU2()
+{
+	uint8 i;
+	UART_sendByte('G');
+	_delay_ms(100);
+	for (i=0; i<5; i++)
+ 2f4:	c0 17       	cp	r28, r16
+ 2f6:	d1 07       	cpc	r29, r17
+ 2f8:	d1 f7       	brne	.-12     	; 0x2ee <ECU1_getPassFromMCU2+0x28>
+	{
+		Passwrd[i] = UART_recieveByte();
+	}
+}
+ 2fa:	df 91       	pop	r29
+ 2fc:	cf 91       	pop	r28
+ 2fe:	1f 91       	pop	r17
+ 300:	0f 91       	pop	r16
+ 302:	08 95       	ret
+
+00000304 <ECU1_displayPass>:
+
+void ECU1_displayPass()
+{
+ 304:	0f 93       	push	r16
+ 306:	1f 93       	push	r17
+ 308:	cf 93       	push	r28
+ 30a:	df 93       	push	r29
+	uint8 i;
+	ECU1_getPassFromMCU2();
+ 30c:	0e 94 63 01 	call	0x2c6	; 0x2c6 <ECU1_getPassFromMCU2>
+ 310:	c3 eb       	ldi	r28, 0xB3	; 179
+ 312:	d1 e0       	ldi	r29, 0x01	; 1
+ 314:	08 eb       	ldi	r16, 0xB8	; 184
+ 316:	11 e0       	ldi	r17, 0x01	; 1
+	for(i=0;i<5;i++)
+	{
+		if (Passwrd[i]== '*' || Passwrd[i]== '#')
+ 318:	89 91       	ld	r24, Y+
+ 31a:	8a 32       	cpi	r24, 0x2A	; 42
+ 31c:	11 f0       	breq	.+4      	; 0x322 <ECU1_displayPass+0x1e>
+ 31e:	83 32       	cpi	r24, 0x23	; 35
+ 320:	19 f4       	brne	.+6      	; 0x328 <ECU1_displayPass+0x24>
+			LCD_displayCharacter(Passwrd[i]);
+ 322:	0e 94 6b 04 	call	0x8d6	; 0x8d6 <LCD_displayCharacter>
+ 326:	07 c0       	rjmp	.+14     	; 0x336 <ECU1_displayPass+0x32>
+		else
+			LCD_displayNumber(Passwrd[i], 10);
+ 328:	68 2f       	mov	r22, r24
+ 32a:	70 e0       	ldi	r23, 0x00	; 0
+ 32c:	80 e0       	ldi	r24, 0x00	; 0
+ 32e:	90 e0       	ldi	r25, 0x00	; 0
+ 330:	4a e0       	ldi	r20, 0x0A	; 10
+ 332:	0e 94 7e 04 	call	0x8fc	; 0x8fc <LCD_displayNumber>
+
+void ECU1_displayPass()
+{
+	uint8 i;
+	ECU1_getPassFromMCU2();
+	for(i=0;i<5;i++)
+ 336:	c0 17       	cp	r28, r16
+ 338:	d1 07       	cpc	r29, r17
+ 33a:	71 f7       	brne	.-36     	; 0x318 <ECU1_displayPass+0x14>
+		if (Passwrd[i]== '*' || Passwrd[i]== '#')
+			LCD_displayCharacter(Passwrd[i]);
+		else
+			LCD_displayNumber(Passwrd[i], 10);
+	}
+}
+ 33c:	df 91       	pop	r29
+ 33e:	cf 91       	pop	r28
+ 340:	1f 91       	pop	r17
+ 342:	0f 91       	pop	r16
+ 344:	08 95       	ret
+
+00000346 <ECU1_checkIfPassExist>:
+
+void ECU1_checkIfPassExist()
+{
+	uint8 isNewPasswrd;
+	isNewPasswrd = UART_recieveByte();
+ 346:	0e 94 3d 05 	call	0xa7a	; 0xa7a <UART_recieveByte>
+	if (isNewPasswrd==1)	// 1st time initializing!
+ 34a:	81 30       	cpi	r24, 0x01	; 1
+ 34c:	49 f5       	brne	.+82     	; 0x3a0 <ECU1_checkIfPassExist+0x5a>
+	{
+		LCD_clearScreen();
+ 34e:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+		LCD_displayString("Hello Mr. Ayman!");
+ 352:	81 e6       	ldi	r24, 0x61	; 97
+ 354:	90 e0       	ldi	r25, 0x00	; 0
+ 356:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+ 35a:	2f ef       	ldi	r18, 0xFF	; 255
+ 35c:	84 e3       	ldi	r24, 0x34	; 52
+ 35e:	9c e0       	ldi	r25, 0x0C	; 12
+ 360:	21 50       	subi	r18, 0x01	; 1
+ 362:	80 40       	sbci	r24, 0x00	; 0
+ 364:	90 40       	sbci	r25, 0x00	; 0
+ 366:	e1 f7       	brne	.-8      	; 0x360 <ECU1_checkIfPassExist+0x1a>
+ 368:	00 c0       	rjmp	.+0      	; 0x36a <ECU1_checkIfPassExist+0x24>
+ 36a:	00 00       	nop
+		_delay_ms(500);
+		LCD_clearScreen();
+ 36c:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+		LCD_displayString("Initializing Ur");
+ 370:	82 e7       	ldi	r24, 0x72	; 114
+ 372:	90 e0       	ldi	r25, 0x00	; 0
+ 374:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+		LCD_displayStringRowColumn(1,4,"Pass: ");
+ 378:	42 e8       	ldi	r20, 0x82	; 130
+ 37a:	50 e0       	ldi	r21, 0x00	; 0
+ 37c:	64 e0       	ldi	r22, 0x04	; 4
+ 37e:	81 e0       	ldi	r24, 0x01	; 1
+ 380:	0e 94 20 05 	call	0xa40	; 0xa40 <LCD_displayStringRowColumn>
+ 384:	2f ef       	ldi	r18, 0xFF	; 255
+ 386:	81 ee       	ldi	r24, 0xE1	; 225
+ 388:	94 e0       	ldi	r25, 0x04	; 4
+ 38a:	21 50       	subi	r18, 0x01	; 1
+ 38c:	80 40       	sbci	r24, 0x00	; 0
+ 38e:	90 40       	sbci	r25, 0x00	; 0
+ 390:	e1 f7       	brne	.-8      	; 0x38a <ECU1_checkIfPassExist+0x44>
+ 392:	00 c0       	rjmp	.+0      	; 0x394 <ECU1_checkIfPassExist+0x4e>
+ 394:	00 00       	nop
+		_delay_ms(200);
+		ECU1_getPass();
+ 396:	0e 94 05 01 	call	0x20a	; 0x20a <ECU1_getPass>
+		ECU1_sendPassToMCU2();
+ 39a:	0e 94 3e 01 	call	0x27c	; 0x27c <ECU1_sendPassToMCU2>
+ 39e:	08 95       	ret
+	}
+	else if(isNewPasswrd==0)
+ 3a0:	81 11       	cpse	r24, r1
+ 3a2:	0c c0       	rjmp	.+24     	; 0x3bc <ECU1_checkIfPassExist+0x76>
+	{
+		LCD_clearScreen();
+ 3a4:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+		LCD_displayString("  Welcome back");
+ 3a8:	89 e8       	ldi	r24, 0x89	; 137
+ 3aa:	90 e0       	ldi	r25, 0x00	; 0
+ 3ac:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+		LCD_displayStringRowColumn(1,0,"   Mr. Ayman! ");
+ 3b0:	48 e9       	ldi	r20, 0x98	; 152
+ 3b2:	50 e0       	ldi	r21, 0x00	; 0
+ 3b4:	60 e0       	ldi	r22, 0x00	; 0
+ 3b6:	81 e0       	ldi	r24, 0x01	; 1
+ 3b8:	0e 94 20 05 	call	0xa40	; 0xa40 <LCD_displayStringRowColumn>
+ 3bc:	08 95       	ret
+
+000003be <main>:
+uint8 falseTryingFlag = 3;
+
+int main(void)
+{
+	/* initialize the lcd */
+	LCD_init(LCD_CURSOR_OFF);
+ 3be:	8c e0       	ldi	r24, 0x0C	; 12
+ 3c0:	0e 94 3f 04 	call	0x87e	; 0x87e <LCD_init>
+	UART_init();
+ 3c4:	0e 94 2f 05 	call	0xa5e	; 0xa5e <UART_init>
+ 3c8:	2f e7       	ldi	r18, 0x7F	; 127
+ 3ca:	88 e3       	ldi	r24, 0x38	; 56
+ 3cc:	91 e0       	ldi	r25, 0x01	; 1
+ 3ce:	21 50       	subi	r18, 0x01	; 1
+ 3d0:	80 40       	sbci	r24, 0x00	; 0
+ 3d2:	90 40       	sbci	r25, 0x00	; 0
+ 3d4:	e1 f7       	brne	.-8      	; 0x3ce <main+0x10>
+ 3d6:	00 c0       	rjmp	.+0      	; 0x3d8 <main+0x1a>
+ 3d8:	00 00       	nop
+	_delay_ms(50);
+	
+	ECU1_checkIfPassExist();
+ 3da:	0e 94 a3 01 	call	0x346	; 0x346 <ECU1_checkIfPassExist>
+				else if (isPassTrue==0)
+				{
+					falseTryingFlag--;
+					if (falseTryingFlag==0)
+					{
+						falseTryingFlag=3;
+ 3de:	c3 e0       	ldi	r28, 0x03	; 3
+	
+	ECU1_checkIfPassExist();
+	
+	while(1)
+	{
+		LCD_clearScreen();
+ 3e0:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+		LCD_displayString("Door is Locked!");
+ 3e4:	87 ea       	ldi	r24, 0xA7	; 167
+ 3e6:	90 e0       	ldi	r25, 0x00	; 0
+ 3e8:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+		LCD_displayStringRowColumn(1,0,"#:Change *:Open");
+ 3ec:	47 eb       	ldi	r20, 0xB7	; 183
+ 3ee:	50 e0       	ldi	r21, 0x00	; 0
+ 3f0:	60 e0       	ldi	r22, 0x00	; 0
+ 3f2:	81 e0       	ldi	r24, 0x01	; 1
+ 3f4:	0e 94 20 05 	call	0xa40	; 0xa40 <LCD_displayStringRowColumn>
+		userOption = KeyPad_getPressedKey();
+ 3f8:	0e 94 55 03 	call	0x6aa	; 0x6aa <KeyPad_getPressedKey>
+ 3fc:	80 93 b8 01 	sts	0x01B8, r24
+		
+		switch(userOption)
+ 400:	83 32       	cpi	r24, 0x23	; 35
+ 402:	21 f0       	breq	.+8      	; 0x40c <main+0x4e>
+ 404:	8a 32       	cpi	r24, 0x2A	; 42
+ 406:	09 f4       	brne	.+2      	; 0x40a <main+0x4c>
+ 408:	9e c0       	rjmp	.+316    	; 0x546 <__stack+0xe7>
+ 40a:	33 c1       	rjmp	.+614    	; 0x672 <__stack+0x213>
+		{
+			case '#':
+				LCD_clearScreen();
+ 40c:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+				LCD_displayString("Plz Enter Current");
+ 410:	87 ec       	ldi	r24, 0xC7	; 199
+ 412:	90 e0       	ldi	r25, 0x00	; 0
+ 414:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+				LCD_displayStringRowColumn(1,2,"Pass: ");
+ 418:	42 e8       	ldi	r20, 0x82	; 130
+ 41a:	50 e0       	ldi	r21, 0x00	; 0
+ 41c:	62 e0       	ldi	r22, 0x02	; 2
+ 41e:	81 e0       	ldi	r24, 0x01	; 1
+ 420:	0e 94 20 05 	call	0xa40	; 0xa40 <LCD_displayStringRowColumn>
+ 424:	2f ef       	ldi	r18, 0xFF	; 255
+ 426:	81 ee       	ldi	r24, 0xE1	; 225
+ 428:	94 e0       	ldi	r25, 0x04	; 4
+ 42a:	21 50       	subi	r18, 0x01	; 1
+ 42c:	80 40       	sbci	r24, 0x00	; 0
+ 42e:	90 40       	sbci	r25, 0x00	; 0
+ 430:	e1 f7       	brne	.-8      	; 0x42a <main+0x6c>
+ 432:	00 c0       	rjmp	.+0      	; 0x434 <main+0x76>
+ 434:	00 00       	nop
+				_delay_ms(200);
+				ECU1_getPass();
+ 436:	0e 94 05 01 	call	0x20a	; 0x20a <ECU1_getPass>
+				UART_sendByte('C'); // Let ECU2 know that I want to check
+ 43a:	83 e4       	ldi	r24, 0x43	; 67
+ 43c:	0e 94 39 05 	call	0xa72	; 0xa72 <UART_sendByte>
+				ECU1_sendPassToMCU2();
+ 440:	0e 94 3e 01 	call	0x27c	; 0x27c <ECU1_sendPassToMCU2>
+				isPassTrue = UART_recieveByte();
+ 444:	0e 94 3d 05 	call	0xa7a	; 0xa7a <UART_recieveByte>
+ 448:	80 93 94 01 	sts	0x0194, r24
+				if (isPassTrue==1)
+ 44c:	81 30       	cpi	r24, 0x01	; 1
+ 44e:	e9 f5       	brne	.+122    	; 0x4ca <__stack+0x6b>
+				{
+					falseTryingFlag=3;
+ 450:	c0 93 60 00 	sts	0x0060, r28
+					LCD_clearScreen();
+ 454:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+					LCD_displayString("Valid, Enter New");
+ 458:	89 ed       	ldi	r24, 0xD9	; 217
+ 45a:	90 e0       	ldi	r25, 0x00	; 0
+ 45c:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+					LCD_displayStringRowColumn(1,2,"Pass: ");
+ 460:	42 e8       	ldi	r20, 0x82	; 130
+ 462:	50 e0       	ldi	r21, 0x00	; 0
+ 464:	62 e0       	ldi	r22, 0x02	; 2
+ 466:	81 e0       	ldi	r24, 0x01	; 1
+ 468:	0e 94 20 05 	call	0xa40	; 0xa40 <LCD_displayStringRowColumn>
+ 46c:	2f ef       	ldi	r18, 0xFF	; 255
+ 46e:	81 ee       	ldi	r24, 0xE1	; 225
+ 470:	94 e0       	ldi	r25, 0x04	; 4
+ 472:	21 50       	subi	r18, 0x01	; 1
+ 474:	80 40       	sbci	r24, 0x00	; 0
+ 476:	90 40       	sbci	r25, 0x00	; 0
+ 478:	e1 f7       	brne	.-8      	; 0x472 <__stack+0x13>
+ 47a:	00 c0       	rjmp	.+0      	; 0x47c <__stack+0x1d>
+ 47c:	00 00       	nop
+					_delay_ms(200);
+					ECU1_getPass();
+ 47e:	0e 94 05 01 	call	0x20a	; 0x20a <ECU1_getPass>
+					UART_sendByte('S'); // Let ECU2 know that I want to save new password
+ 482:	83 e5       	ldi	r24, 0x53	; 83
+ 484:	0e 94 39 05 	call	0xa72	; 0xa72 <UART_sendByte>
+ 488:	2f ef       	ldi	r18, 0xFF	; 255
+ 48a:	80 e7       	ldi	r24, 0x70	; 112
+ 48c:	92 e0       	ldi	r25, 0x02	; 2
+ 48e:	21 50       	subi	r18, 0x01	; 1
+ 490:	80 40       	sbci	r24, 0x00	; 0
+ 492:	90 40       	sbci	r25, 0x00	; 0
+ 494:	e1 f7       	brne	.-8      	; 0x48e <__stack+0x2f>
+ 496:	00 c0       	rjmp	.+0      	; 0x498 <__stack+0x39>
+ 498:	00 00       	nop
+					_delay_ms(100);
+					ECU1_sendPassToMCU2();
+ 49a:	0e 94 3e 01 	call	0x27c	; 0x27c <ECU1_sendPassToMCU2>
+					LCD_clearScreen();
+ 49e:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+					LCD_displayString("PASSWORD SAVED!");
+ 4a2:	8a ee       	ldi	r24, 0xEA	; 234
+ 4a4:	90 e0       	ldi	r25, 0x00	; 0
+ 4a6:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+					LCD_goToRowColumn(1,4);
+ 4aa:	64 e0       	ldi	r22, 0x04	; 4
+ 4ac:	81 e0       	ldi	r24, 0x01	; 1
+ 4ae:	0e 94 10 05 	call	0xa20	; 0xa20 <LCD_goToRowColumn>
+					ECU1_displayPass();
+ 4b2:	0e 94 82 01 	call	0x304	; 0x304 <ECU1_displayPass>
+ 4b6:	2f ef       	ldi	r18, 0xFF	; 255
+ 4b8:	84 e3       	ldi	r24, 0x34	; 52
+ 4ba:	9c e0       	ldi	r25, 0x0C	; 12
+ 4bc:	21 50       	subi	r18, 0x01	; 1
+ 4be:	80 40       	sbci	r24, 0x00	; 0
+ 4c0:	90 40       	sbci	r25, 0x00	; 0
+ 4c2:	e1 f7       	brne	.-8      	; 0x4bc <__stack+0x5d>
+ 4c4:	00 c0       	rjmp	.+0      	; 0x4c6 <__stack+0x67>
+ 4c6:	00 00       	nop
+ 4c8:	8b cf       	rjmp	.-234    	; 0x3e0 <main+0x22>
+					_delay_ms(500);
+				}
+				else if (isPassTrue==0)
+ 4ca:	81 11       	cpse	r24, r1
+ 4cc:	89 cf       	rjmp	.-238    	; 0x3e0 <main+0x22>
+				{
+					falseTryingFlag--;
+ 4ce:	80 91 60 00 	lds	r24, 0x0060
+ 4d2:	81 50       	subi	r24, 0x01	; 1
+ 4d4:	80 93 60 00 	sts	0x0060, r24
+					if (falseTryingFlag==0)
+ 4d8:	81 11       	cpse	r24, r1
+ 4da:	15 c0       	rjmp	.+42     	; 0x506 <__stack+0xa7>
+					{
+						falseTryingFlag=3;
+ 4dc:	c0 93 60 00 	sts	0x0060, r28
+						LCD_clearScreen();
+ 4e0:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+						LCD_displayString("  Invalid...!");
+ 4e4:	8a ef       	ldi	r24, 0xFA	; 250
+ 4e6:	90 e0       	ldi	r25, 0x00	; 0
+ 4e8:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+						UART_sendByte('F');
+ 4ec:	86 e4       	ldi	r24, 0x46	; 70
+ 4ee:	0e 94 39 05 	call	0xa72	; 0xa72 <UART_sendByte>
+ 4f2:	2f ef       	ldi	r18, 0xFF	; 255
+ 4f4:	81 ee       	ldi	r24, 0xE1	; 225
+ 4f6:	94 e0       	ldi	r25, 0x04	; 4
+ 4f8:	21 50       	subi	r18, 0x01	; 1
+ 4fa:	80 40       	sbci	r24, 0x00	; 0
+ 4fc:	90 40       	sbci	r25, 0x00	; 0
+ 4fe:	e1 f7       	brne	.-8      	; 0x4f8 <__stack+0x99>
+ 500:	00 c0       	rjmp	.+0      	; 0x502 <__stack+0xa3>
+ 502:	00 00       	nop
+ 504:	6d cf       	rjmp	.-294    	; 0x3e0 <main+0x22>
+						_delay_ms(200);
+					}
+					else
+					{
+						LCD_clearScreen();
+ 506:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+						LCD_displayString("Invalid!, You've");
+ 50a:	88 e0       	ldi	r24, 0x08	; 8
+ 50c:	91 e0       	ldi	r25, 0x01	; 1
+ 50e:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+						LCD_goToRowColumn(1,0);
+ 512:	60 e0       	ldi	r22, 0x00	; 0
+ 514:	81 e0       	ldi	r24, 0x01	; 1
+ 516:	0e 94 10 05 	call	0xa20	; 0xa20 <LCD_goToRowColumn>
+						LCD_displayNumber(falseTryingFlag, 10);
+ 51a:	60 91 60 00 	lds	r22, 0x0060
+ 51e:	70 e0       	ldi	r23, 0x00	; 0
+ 520:	80 e0       	ldi	r24, 0x00	; 0
+ 522:	90 e0       	ldi	r25, 0x00	; 0
+ 524:	4a e0       	ldi	r20, 0x0A	; 10
+ 526:	0e 94 7e 04 	call	0x8fc	; 0x8fc <LCD_displayNumber>
+						LCD_displayString(" More Tries!");
+ 52a:	89 e1       	ldi	r24, 0x19	; 25
+ 52c:	91 e0       	ldi	r25, 0x01	; 1
+ 52e:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+ 532:	2f ef       	ldi	r18, 0xFF	; 255
+ 534:	84 e3       	ldi	r24, 0x34	; 52
+ 536:	9c e0       	ldi	r25, 0x0C	; 12
+ 538:	21 50       	subi	r18, 0x01	; 1
+ 53a:	80 40       	sbci	r24, 0x00	; 0
+ 53c:	90 40       	sbci	r25, 0x00	; 0
+ 53e:	e1 f7       	brne	.-8      	; 0x538 <__stack+0xd9>
+ 540:	00 c0       	rjmp	.+0      	; 0x542 <__stack+0xe3>
+ 542:	00 00       	nop
+ 544:	4d cf       	rjmp	.-358    	; 0x3e0 <main+0x22>
+						_delay_ms(500);
+					}
+				}
+				break;
+			case '*':
+				LCD_clearScreen();
+ 546:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+				LCD_displayString("Plz Enter Current");
+ 54a:	87 ec       	ldi	r24, 0xC7	; 199
+ 54c:	90 e0       	ldi	r25, 0x00	; 0
+ 54e:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+				LCD_displayStringRowColumn(1,2,"Pass: ");
+ 552:	42 e8       	ldi	r20, 0x82	; 130
+ 554:	50 e0       	ldi	r21, 0x00	; 0
+ 556:	62 e0       	ldi	r22, 0x02	; 2
+ 558:	81 e0       	ldi	r24, 0x01	; 1
+ 55a:	0e 94 20 05 	call	0xa40	; 0xa40 <LCD_displayStringRowColumn>
+ 55e:	2f ef       	ldi	r18, 0xFF	; 255
+ 560:	81 ee       	ldi	r24, 0xE1	; 225
+ 562:	94 e0       	ldi	r25, 0x04	; 4
+ 564:	21 50       	subi	r18, 0x01	; 1
+ 566:	80 40       	sbci	r24, 0x00	; 0
+ 568:	90 40       	sbci	r25, 0x00	; 0
+ 56a:	e1 f7       	brne	.-8      	; 0x564 <__stack+0x105>
+ 56c:	00 c0       	rjmp	.+0      	; 0x56e <__stack+0x10f>
+ 56e:	00 00       	nop
+				_delay_ms(200);
+				ECU1_getPass();
+ 570:	0e 94 05 01 	call	0x20a	; 0x20a <ECU1_getPass>
+				UART_sendByte('C'); // Let ECU2 know that I want to check
+ 574:	83 e4       	ldi	r24, 0x43	; 67
+ 576:	0e 94 39 05 	call	0xa72	; 0xa72 <UART_sendByte>
+				ECU1_sendPassToMCU2();
+ 57a:	0e 94 3e 01 	call	0x27c	; 0x27c <ECU1_sendPassToMCU2>
+				isPassTrue = UART_recieveByte();
+ 57e:	0e 94 3d 05 	call	0xa7a	; 0xa7a <UART_recieveByte>
+ 582:	80 93 94 01 	sts	0x0194, r24
+				if (isPassTrue==1)
+ 586:	81 30       	cpi	r24, 0x01	; 1
+ 588:	b1 f5       	brne	.+108    	; 0x5f6 <__stack+0x197>
+				{
+					falseTryingFlag=3;
+ 58a:	c0 93 60 00 	sts	0x0060, r28
+					LCD_clearScreen();
+ 58e:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+					UART_sendByte('U');
+ 592:	85 e5       	ldi	r24, 0x55	; 85
+ 594:	0e 94 39 05 	call	0xa72	; 0xa72 <UART_sendByte>
+					LCD_displayString("Valid!, MOTOR IS");
+ 598:	86 e2       	ldi	r24, 0x26	; 38
+ 59a:	91 e0       	ldi	r25, 0x01	; 1
+ 59c:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+					LCD_displayStringRowColumn(1,0," UNLOCKING..");
+ 5a0:	47 e3       	ldi	r20, 0x37	; 55
+ 5a2:	51 e0       	ldi	r21, 0x01	; 1
+ 5a4:	60 e0       	ldi	r22, 0x00	; 0
+ 5a6:	81 e0       	ldi	r24, 0x01	; 1
+ 5a8:	0e 94 20 05 	call	0xa40	; 0xa40 <LCD_displayStringRowColumn>
+ 5ac:	2f ef       	ldi	r18, 0xFF	; 255
+ 5ae:	81 e1       	ldi	r24, 0x11	; 17
+ 5b0:	9a e7       	ldi	r25, 0x7A	; 122
+ 5b2:	21 50       	subi	r18, 0x01	; 1
+ 5b4:	80 40       	sbci	r24, 0x00	; 0
+ 5b6:	90 40       	sbci	r25, 0x00	; 0
+ 5b8:	e1 f7       	brne	.-8      	; 0x5b2 <__stack+0x153>
+ 5ba:	00 c0       	rjmp	.+0      	; 0x5bc <__stack+0x15d>
+ 5bc:	00 00       	nop
+					_delay_ms(5000);
+					UART_sendByte('L');
+ 5be:	8c e4       	ldi	r24, 0x4C	; 76
+ 5c0:	0e 94 39 05 	call	0xa72	; 0xa72 <UART_sendByte>
+					LCD_clearScreen();
+ 5c4:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+					LCD_displayString("Done, MOTOR IS");
+ 5c8:	84 e4       	ldi	r24, 0x44	; 68
+ 5ca:	91 e0       	ldi	r25, 0x01	; 1
+ 5cc:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+					LCD_displayStringRowColumn(1,0," LOCKING..");
+ 5d0:	43 e5       	ldi	r20, 0x53	; 83
+ 5d2:	51 e0       	ldi	r21, 0x01	; 1
+ 5d4:	60 e0       	ldi	r22, 0x00	; 0
+ 5d6:	81 e0       	ldi	r24, 0x01	; 1
+ 5d8:	0e 94 20 05 	call	0xa40	; 0xa40 <LCD_displayStringRowColumn>
+ 5dc:	2f ef       	ldi	r18, 0xFF	; 255
+ 5de:	81 e1       	ldi	r24, 0x11	; 17
+ 5e0:	9a e7       	ldi	r25, 0x7A	; 122
+ 5e2:	21 50       	subi	r18, 0x01	; 1
+ 5e4:	80 40       	sbci	r24, 0x00	; 0
+ 5e6:	90 40       	sbci	r25, 0x00	; 0
+ 5e8:	e1 f7       	brne	.-8      	; 0x5e2 <__stack+0x183>
+ 5ea:	00 c0       	rjmp	.+0      	; 0x5ec <__stack+0x18d>
+ 5ec:	00 00       	nop
+					_delay_ms(5000);
+					UART_sendByte('M');
+ 5ee:	8d e4       	ldi	r24, 0x4D	; 77
+ 5f0:	0e 94 39 05 	call	0xa72	; 0xa72 <UART_sendByte>
+ 5f4:	f5 ce       	rjmp	.-534    	; 0x3e0 <main+0x22>
+				}
+				else if (isPassTrue==0)
+ 5f6:	81 11       	cpse	r24, r1
+ 5f8:	f3 ce       	rjmp	.-538    	; 0x3e0 <main+0x22>
+				{
+					falseTryingFlag--;
+ 5fa:	80 91 60 00 	lds	r24, 0x0060
+ 5fe:	81 50       	subi	r24, 0x01	; 1
+ 600:	80 93 60 00 	sts	0x0060, r24
+					if (falseTryingFlag==0)
+ 604:	81 11       	cpse	r24, r1
+ 606:	15 c0       	rjmp	.+42     	; 0x632 <__stack+0x1d3>
+					{
+						falseTryingFlag=3;
+ 608:	c0 93 60 00 	sts	0x0060, r28
+						LCD_clearScreen();
+ 60c:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+						LCD_displayString("  Invalid...!");
+ 610:	8a ef       	ldi	r24, 0xFA	; 250
+ 612:	90 e0       	ldi	r25, 0x00	; 0
+ 614:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+						UART_sendByte('F');
+ 618:	86 e4       	ldi	r24, 0x46	; 70
+ 61a:	0e 94 39 05 	call	0xa72	; 0xa72 <UART_sendByte>
+ 61e:	2f ef       	ldi	r18, 0xFF	; 255
+ 620:	81 ee       	ldi	r24, 0xE1	; 225
+ 622:	94 e0       	ldi	r25, 0x04	; 4
+ 624:	21 50       	subi	r18, 0x01	; 1
+ 626:	80 40       	sbci	r24, 0x00	; 0
+ 628:	90 40       	sbci	r25, 0x00	; 0
+ 62a:	e1 f7       	brne	.-8      	; 0x624 <__stack+0x1c5>
+ 62c:	00 c0       	rjmp	.+0      	; 0x62e <__stack+0x1cf>
+ 62e:	00 00       	nop
+ 630:	d7 ce       	rjmp	.-594    	; 0x3e0 <main+0x22>
+						_delay_ms(200);
+					}
+					else
+					{
+						LCD_clearScreen();
+ 632:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+						LCD_displayString("Invalid!, You've");
+ 636:	88 e0       	ldi	r24, 0x08	; 8
+ 638:	91 e0       	ldi	r25, 0x01	; 1
+ 63a:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+						LCD_goToRowColumn(1,0);
+ 63e:	60 e0       	ldi	r22, 0x00	; 0
+ 640:	81 e0       	ldi	r24, 0x01	; 1
+ 642:	0e 94 10 05 	call	0xa20	; 0xa20 <LCD_goToRowColumn>
+						LCD_displayNumber(falseTryingFlag, 10);
+ 646:	60 91 60 00 	lds	r22, 0x0060
+ 64a:	70 e0       	ldi	r23, 0x00	; 0
+ 64c:	80 e0       	ldi	r24, 0x00	; 0
+ 64e:	90 e0       	ldi	r25, 0x00	; 0
+ 650:	4a e0       	ldi	r20, 0x0A	; 10
+ 652:	0e 94 7e 04 	call	0x8fc	; 0x8fc <LCD_displayNumber>
+						LCD_displayString(" More Tries!");
+ 656:	89 e1       	ldi	r24, 0x19	; 25
+ 658:	91 e0       	ldi	r25, 0x01	; 1
+ 65a:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+ 65e:	2f ef       	ldi	r18, 0xFF	; 255
+ 660:	84 e3       	ldi	r24, 0x34	; 52
+ 662:	9c e0       	ldi	r25, 0x0C	; 12
+ 664:	21 50       	subi	r18, 0x01	; 1
+ 666:	80 40       	sbci	r24, 0x00	; 0
+ 668:	90 40       	sbci	r25, 0x00	; 0
+ 66a:	e1 f7       	brne	.-8      	; 0x664 <__stack+0x205>
+ 66c:	00 c0       	rjmp	.+0      	; 0x66e <__stack+0x20f>
+ 66e:	00 00       	nop
+ 670:	b7 ce       	rjmp	.-658    	; 0x3e0 <main+0x22>
+						_delay_ms(500);
+					}
+				}
+				break;
+			default:
+				LCD_clearScreen();
+ 672:	0e 94 2b 05 	call	0xa56	; 0xa56 <LCD_clearScreen>
+				LCD_displayString("Invalid Option!");
+ 676:	8e e5       	ldi	r24, 0x5E	; 94
+ 678:	91 e0       	ldi	r25, 0x01	; 1
+ 67a:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+ 67e:	2f ef       	ldi	r18, 0xFF	; 255
+ 680:	84 e3       	ldi	r24, 0x34	; 52
+ 682:	9c e0       	ldi	r25, 0x0C	; 12
+ 684:	21 50       	subi	r18, 0x01	; 1
+ 686:	80 40       	sbci	r24, 0x00	; 0
+ 688:	90 40       	sbci	r25, 0x00	; 0
+ 68a:	e1 f7       	brne	.-8      	; 0x684 <__stack+0x225>
+ 68c:	00 c0       	rjmp	.+0      	; 0x68e <__stack+0x22f>
+ 68e:	00 00       	nop
+ 690:	a7 ce       	rjmp	.-690    	; 0x3e0 <main+0x22>
+
+00000692 <KeyPad_4x3_adjustKeyNumber>:
+
+#if (N_col == 3) 
+
+uint8 KeyPad_4x3_adjustKeyNumber(uint8 button_number)
+{
+	switch(button_number)
+ 692:	8b 30       	cpi	r24, 0x0B	; 11
+ 694:	41 f0       	breq	.+16     	; 0x6a6 <KeyPad_4x3_adjustKeyNumber+0x14>
+ 696:	8c 30       	cpi	r24, 0x0C	; 12
+ 698:	21 f0       	breq	.+8      	; 0x6a2 <KeyPad_4x3_adjustKeyNumber+0x10>
+ 69a:	8a 30       	cpi	r24, 0x0A	; 10
+ 69c:	29 f4       	brne	.+10     	; 0x6a8 <KeyPad_4x3_adjustKeyNumber+0x16>
+	{
+		case 10: return '*'; // ASCII Code of =
+ 69e:	8a e2       	ldi	r24, 0x2A	; 42
+ 6a0:	08 95       	ret
+				 break;
+		case 11: return 0;
+				 break;		
+		case 12: return '#'; // ASCII Code of +
+ 6a2:	83 e2       	ldi	r24, 0x23	; 35
+ 6a4:	08 95       	ret
+{
+	switch(button_number)
+	{
+		case 10: return '*'; // ASCII Code of =
+				 break;
+		case 11: return 0;
+ 6a6:	80 e0       	ldi	r24, 0x00	; 0
+				 break;		
+		case 12: return '#'; // ASCII Code of +
+				 break;
+		default: return button_number;					 						
+	}
+} 
+ 6a8:	08 95       	ret
+
+000006aa <KeyPad_getPressedKey>:
+
+uint8 KeyPad_getPressedKey(void){
+	uint8 col,row;
+	while(1)
+	{
+		for(col=0;col<N_col;col++) /* loop for columns */
+ 6aa:	80 e0       	ldi	r24, 0x00	; 0
+		{
+			/* 
+			 * each time only one of the column pins will be output and 
+			 * the rest will be input pins include the row pins 
+			 */ 
+			KEYPAD_PORT_DIR = (0b00010000<<col); 
+ 6ac:	60 e1       	ldi	r22, 0x10	; 16
+ 6ae:	70 e0       	ldi	r23, 0x00	; 0
+			 * pull up resistors for the rows pins
+			 */ 
+			KEYPAD_PORT_OUT = (~(0b00010000<<col)); 
+			for(row=0;row<N_row;row++) /* loop for rows */
+			{
+				if(!(KEYPAD_PORT_IN & (1<<row))) /* if the switch is press in this row */ 
+ 6b0:	f1 e0       	ldi	r31, 0x01	; 1
+ 6b2:	e0 e0       	ldi	r30, 0x00	; 0
+
+uint8 KeyPad_getPressedKey(void){
+	uint8 col,row;
+	while(1)
+	{
+		for(col=0;col<N_col;col++) /* loop for columns */
+ 6b4:	a0 e0       	ldi	r26, 0x00	; 0
+		{
+			/* 
+			 * each time only one of the column pins will be output and 
+			 * the rest will be input pins include the row pins 
+			 */ 
+			KEYPAD_PORT_DIR = (0b00010000<<col); 
+ 6b6:	9b 01       	movw	r18, r22
+ 6b8:	08 2e       	mov	r0, r24
+ 6ba:	02 c0       	rjmp	.+4      	; 0x6c0 <KeyPad_getPressedKey+0x16>
+ 6bc:	22 0f       	add	r18, r18
+ 6be:	33 1f       	adc	r19, r19
+ 6c0:	0a 94       	dec	r0
+ 6c2:	e2 f7       	brpl	.-8      	; 0x6bc <KeyPad_getPressedKey+0x12>
+ 6c4:	27 bb       	out	0x17, r18	; 23
+			
+			/* 
+			 * clear the output pin column in this trace and enable the internal 
+			 * pull up resistors for the rows pins
+			 */ 
+			KEYPAD_PORT_OUT = (~(0b00010000<<col)); 
+ 6c6:	20 95       	com	r18
+ 6c8:	28 bb       	out	0x18, r18	; 24
+			for(row=0;row<N_row;row++) /* loop for rows */
+			{
+				if(!(KEYPAD_PORT_IN & (1<<row))) /* if the switch is press in this row */ 
+ 6ca:	b0 9b       	sbis	0x16, 0	; 22
+ 6cc:	0e c0       	rjmp	.+28     	; 0x6ea <KeyPad_getPressedKey+0x40>
+ 6ce:	2f 2f       	mov	r18, r31
+ 6d0:	3e 2f       	mov	r19, r30
+ 6d2:	92 2f       	mov	r25, r18
+ 6d4:	46 b3       	in	r20, 0x16	; 22
+ 6d6:	50 e0       	ldi	r21, 0x00	; 0
+ 6d8:	02 2e       	mov	r0, r18
+ 6da:	02 c0       	rjmp	.+4      	; 0x6e0 <KeyPad_getPressedKey+0x36>
+ 6dc:	55 95       	asr	r21
+ 6de:	47 95       	ror	r20
+ 6e0:	0a 94       	dec	r0
+ 6e2:	e2 f7       	brpl	.-8      	; 0x6dc <KeyPad_getPressedKey+0x32>
+ 6e4:	40 fd       	sbrc	r20, 0
+ 6e6:	0a c0       	rjmp	.+20     	; 0x6fc <KeyPad_getPressedKey+0x52>
+ 6e8:	01 c0       	rjmp	.+2      	; 0x6ec <KeyPad_getPressedKey+0x42>
+			/* 
+			 * clear the output pin column in this trace and enable the internal 
+			 * pull up resistors for the rows pins
+			 */ 
+			KEYPAD_PORT_OUT = (~(0b00010000<<col)); 
+			for(row=0;row<N_row;row++) /* loop for rows */
+ 6ea:	90 e0       	ldi	r25, 0x00	; 0
+			{
+				if(!(KEYPAD_PORT_IN & (1<<row))) /* if the switch is press in this row */ 
+				{
+					#if (N_col == 3)  
+						return KeyPad_4x3_adjustKeyNumber((row*N_col)+col+1); 
+ 6ec:	8f 5f       	subi	r24, 0xFF	; 255
+ 6ee:	29 2f       	mov	r18, r25
+ 6f0:	22 0f       	add	r18, r18
+ 6f2:	92 0f       	add	r25, r18
+ 6f4:	89 0f       	add	r24, r25
+ 6f6:	0e 94 49 03 	call	0x692	; 0x692 <KeyPad_4x3_adjustKeyNumber>
+ 6fa:	08 95       	ret
+ 6fc:	2f 5f       	subi	r18, 0xFF	; 255
+ 6fe:	3f 4f       	sbci	r19, 0xFF	; 255
+			/* 
+			 * clear the output pin column in this trace and enable the internal 
+			 * pull up resistors for the rows pins
+			 */ 
+			KEYPAD_PORT_OUT = (~(0b00010000<<col)); 
+			for(row=0;row<N_row;row++) /* loop for rows */
+ 700:	24 30       	cpi	r18, 0x04	; 4
+ 702:	31 05       	cpc	r19, r1
+ 704:	31 f7       	brne	.-52     	; 0x6d2 <KeyPad_getPressedKey+0x28>
+
+uint8 KeyPad_getPressedKey(void){
+	uint8 col,row;
+	while(1)
+	{
+		for(col=0;col<N_col;col++) /* loop for columns */
+ 706:	8f 5f       	subi	r24, 0xFF	; 255
+ 708:	83 30       	cpi	r24, 0x03	; 3
+ 70a:	a8 f2       	brcs	.-86     	; 0x6b6 <KeyPad_getPressedKey+0xc>
+ 70c:	8a 2f       	mov	r24, r26
+ 70e:	d3 cf       	rjmp	.-90     	; 0x6b6 <KeyPad_getPressedKey+0xc>
+
+00000710 <LCD_dataConfig>:
+{
+	/* local variable for loop iterations, declared as static to keep its value */
+	static uint8 loop = 0;
+	
+	/* fill initial value for each data pin, then set pin direction for them */
+	g_s_dataConfig[loop].s_port			= a_lcdPort;
+ 710:	e0 91 96 01 	lds	r30, 0x0196
+ 714:	f0 e0       	ldi	r31, 0x00	; 0
+ 716:	ee 0f       	add	r30, r30
+ 718:	ff 1f       	adc	r31, r31
+ 71a:	ee 0f       	add	r30, r30
+ 71c:	ff 1f       	adc	r31, r31
+ 71e:	ed 55       	subi	r30, 0x5D	; 93
+ 720:	fe 4f       	sbci	r31, 0xFE	; 254
+ 722:	80 83       	st	Z, r24
+	g_s_dataConfig[loop].s_pinNum		= a_lcdPin;
+ 724:	61 83       	std	Z+1, r22	; 0x01
+	g_s_dataConfig[loop].s_direction	= OUTPUT;
+ 726:	81 e0       	ldi	r24, 0x01	; 1
+ 728:	82 83       	std	Z+2, r24	; 0x02
+	g_s_dataConfig[loop].s_value		= LOGIC_LOW;
+ 72a:	13 82       	std	Z+3, r1	; 0x03
+	
+	DIO_setPinDirection(& g_s_dataConfig[loop]);
+ 72c:	cf 01       	movw	r24, r30
+ 72e:	0e 94 91 00 	call	0x122	; 0x122 <DIO_setPinDirection>
+	loop++;
+ 732:	80 91 96 01 	lds	r24, 0x0196
+ 736:	8f 5f       	subi	r24, 0xFF	; 255
+ 738:	80 93 96 01 	sts	0x0196, r24
+ 73c:	08 95       	ret
+
+0000073e <LCD_ctrlConfig>:
+{
+	/* local variable for loop iterations, declared as static to keep its value */
+	static uint8 loop = 0;
+	
+	/* fill initial value for each control pin, then set pin direction for them */
+	g_s_ctrlConfig[loop].s_port			=	a_lcdPort;
+ 73e:	e0 91 95 01 	lds	r30, 0x0195
+ 742:	f0 e0       	ldi	r31, 0x00	; 0
+ 744:	ee 0f       	add	r30, r30
+ 746:	ff 1f       	adc	r31, r31
+ 748:	ee 0f       	add	r30, r30
+ 74a:	ff 1f       	adc	r31, r31
+ 74c:	e9 56       	subi	r30, 0x69	; 105
+ 74e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 750:	80 83       	st	Z, r24
+	g_s_ctrlConfig[loop].s_pinNum		=	a_lcdPin;
+ 752:	61 83       	std	Z+1, r22	; 0x01
+	g_s_ctrlConfig[loop].s_direction	=	OUTPUT;
+ 754:	81 e0       	ldi	r24, 0x01	; 1
+ 756:	82 83       	std	Z+2, r24	; 0x02
+	g_s_ctrlConfig[loop].s_value		=	LOGIC_LOW;
+ 758:	13 82       	std	Z+3, r1	; 0x03
+	
+	DIO_setPinDirection(& g_s_ctrlConfig[loop]);
+ 75a:	cf 01       	movw	r24, r30
+ 75c:	0e 94 91 00 	call	0x122	; 0x122 <DIO_setPinDirection>
+	loop++;
+ 760:	80 91 95 01 	lds	r24, 0x0195
+ 764:	8f 5f       	subi	r24, 0xFF	; 255
+ 766:	80 93 95 01 	sts	0x0195, r24
+ 76a:	08 95       	ret
+
+0000076c <LCD_write>:
+a_data: The data to be sent to LCD
+a_dataType: the data type whether its a command or data
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+static void LCD_write (uint8 a_data, uint8 a_dataType)
+{	
+ 76c:	cf 92       	push	r12
+ 76e:	df 92       	push	r13
+ 770:	ef 92       	push	r14
+ 772:	ff 92       	push	r15
+ 774:	0f 93       	push	r16
+ 776:	1f 93       	push	r17
+ 778:	cf 93       	push	r28
+ 77a:	df 93       	push	r29
+ 77c:	e8 2e       	mov	r14, r24
+	uint8 loop;
+	if (a_dataType == 0)				/* Data Type is Command */
+ 77e:	61 11       	cpse	r22, r1
+ 780:	07 c0       	rjmp	.+14     	; 0x790 <LCD_write+0x24>
+[in] void:
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+static inline void LCD_rsLow(void)
+{
+	g_s_ctrlConfig[0].s_value = LOGIC_LOW;
+ 782:	10 92 9a 01 	sts	0x019A, r1
+	DIO_writePin(& g_s_ctrlConfig[0]);
+ 786:	87 e9       	ldi	r24, 0x97	; 151
+ 788:	91 e0       	ldi	r25, 0x01	; 1
+ 78a:	0e 94 cb 00 	call	0x196	; 0x196 <DIO_writePin>
+ 78e:	07 c0       	rjmp	.+14     	; 0x79e <LCD_write+0x32>
+[in] void:
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+static inline void LCD_rsHigh(void)
+{
+	g_s_ctrlConfig[0].s_value = LOGIC_HIGH;
+ 790:	81 e0       	ldi	r24, 0x01	; 1
+ 792:	80 93 9a 01 	sts	0x019A, r24
+	DIO_writePin(& g_s_ctrlConfig[0]);
+ 796:	87 e9       	ldi	r24, 0x97	; 151
+ 798:	91 e0       	ldi	r25, 0x01	; 1
+ 79a:	0e 94 cb 00 	call	0x196	; 0x196 <DIO_writePin>
+[in] void:
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+static inline void LCD_rwLow(void)
+{
+	g_s_ctrlConfig[1].s_value = LOGIC_LOW;
+ 79e:	10 92 9e 01 	sts	0x019E, r1
+	DIO_writePin(& g_s_ctrlConfig[1]);
+ 7a2:	8b e9       	ldi	r24, 0x9B	; 155
+ 7a4:	91 e0       	ldi	r25, 0x01	; 1
+ 7a6:	0e 94 cb 00 	call	0x196	; 0x196 <DIO_writePin>
+			*	write each bit in the data value on each corresponding pin
+			*	for we shift the data right by 4 to get 4 bits high nibble and then shift
+			*	these bit [0-3] and ANDing the whole byte with 1 to get each bit value 
+			*	then write this bit to data bin
+			*/
+			g_s_dataConfig[loop].s_value = (((a_data>>4) >> loop) & 1);
+ 7aa:	ce 2c       	mov	r12, r14
+ 7ac:	c6 94       	lsr	r12
+ 7ae:	c6 94       	lsr	r12
+ 7b0:	c6 94       	lsr	r12
+ 7b2:	c6 94       	lsr	r12
+ 7b4:	d1 2c       	mov	r13, r1
+ 7b6:	06 ea       	ldi	r16, 0xA6	; 166
+ 7b8:	11 e0       	ldi	r17, 0x01	; 1
+ 7ba:	c0 e0       	ldi	r28, 0x00	; 0
+ 7bc:	d0 e0       	ldi	r29, 0x00	; 0
+ 7be:	96 01       	movw	r18, r12
+ 7c0:	0c 2e       	mov	r0, r28
+ 7c2:	02 c0       	rjmp	.+4      	; 0x7c8 <LCD_write+0x5c>
+ 7c4:	35 95       	asr	r19
+ 7c6:	27 95       	ror	r18
+ 7c8:	0a 94       	dec	r0
+ 7ca:	e2 f7       	brpl	.-8      	; 0x7c4 <LCD_write+0x58>
+ 7cc:	21 70       	andi	r18, 0x01	; 1
+ 7ce:	f8 01       	movw	r30, r16
+ 7d0:	20 83       	st	Z, r18
+			DIO_writePin(& g_s_dataConfig[loop]);
+ 7d2:	c8 01       	movw	r24, r16
+ 7d4:	03 97       	sbiw	r24, 0x03	; 3
+ 7d6:	0e 94 cb 00 	call	0x196	; 0x196 <DIO_writePin>
+ 7da:	21 96       	adiw	r28, 0x01	; 1
+ 7dc:	0c 5f       	subi	r16, 0xFC	; 252
+ 7de:	1f 4f       	sbci	r17, 0xFF	; 255
+			*/
+			g_s_dataConfig[loop].s_value = ((a_data >> loop) & 1);
+			DIO_writePin(& g_s_dataConfig[loop]);
+		}
+	#elif (LCD_IO_MODE == 4)
+		for (loop=0;loop<LCD_IO_MODE;loop++)
+ 7e0:	c4 30       	cpi	r28, 0x04	; 4
+ 7e2:	d1 05       	cpc	r29, r1
+ 7e4:	61 f7       	brne	.-40     	; 0x7be <LCD_write+0x52>
+[in] void:
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+static inline void LCD_enHigh(void)
+{
+	g_s_ctrlConfig[2].s_value = LOGIC_HIGH;
+ 7e6:	81 e0       	ldi	r24, 0x01	; 1
+ 7e8:	80 93 a2 01 	sts	0x01A2, r24
+	DIO_writePin(& g_s_ctrlConfig[2]);
+ 7ec:	8f e9       	ldi	r24, 0x9F	; 159
+ 7ee:	91 e0       	ldi	r25, 0x01	; 1
+ 7f0:	0e 94 cb 00 	call	0x196	; 0x196 <DIO_writePin>
+ 7f4:	8f ec       	ldi	r24, 0xCF	; 207
+ 7f6:	97 e0       	ldi	r25, 0x07	; 7
+ 7f8:	01 97       	sbiw	r24, 0x01	; 1
+ 7fa:	f1 f7       	brne	.-4      	; 0x7f8 <LCD_write+0x8c>
+ 7fc:	00 c0       	rjmp	.+0      	; 0x7fe <LCD_write+0x92>
+ 7fe:	00 00       	nop
+[in] void:
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+static inline void LCD_enLow(void)
+{
+	g_s_ctrlConfig[2].s_value = LOGIC_LOW;
+ 800:	10 92 a2 01 	sts	0x01A2, r1
+	DIO_writePin(& g_s_ctrlConfig[2]);
+ 804:	8f e9       	ldi	r24, 0x9F	; 159
+ 806:	91 e0       	ldi	r25, 0x01	; 1
+ 808:	0e 94 cb 00 	call	0x196	; 0x196 <DIO_writePin>
+ 80c:	06 ea       	ldi	r16, 0xA6	; 166
+ 80e:	11 e0       	ldi	r17, 0x01	; 1
+ 810:	c0 e0       	ldi	r28, 0x00	; 0
+ 812:	d0 e0       	ldi	r29, 0x00	; 0
+		/* toggle enable pin for LCD to read data */
+		LCD_enToggle();
+		/* send the low nibbles using the same method */
+		for (loop=0;loop<LCD_IO_MODE;loop++)
+		{
+			g_s_dataConfig[loop].s_value = ((a_data >> loop) & 1);
+ 814:	f1 2c       	mov	r15, r1
+ 816:	97 01       	movw	r18, r14
+ 818:	0c 2e       	mov	r0, r28
+ 81a:	02 c0       	rjmp	.+4      	; 0x820 <LCD_write+0xb4>
+ 81c:	35 95       	asr	r19
+ 81e:	27 95       	ror	r18
+ 820:	0a 94       	dec	r0
+ 822:	e2 f7       	brpl	.-8      	; 0x81c <LCD_write+0xb0>
+ 824:	21 70       	andi	r18, 0x01	; 1
+ 826:	f8 01       	movw	r30, r16
+ 828:	20 83       	st	Z, r18
+			DIO_writePin(& g_s_dataConfig[loop]);
+ 82a:	c8 01       	movw	r24, r16
+ 82c:	03 97       	sbiw	r24, 0x03	; 3
+ 82e:	0e 94 cb 00 	call	0x196	; 0x196 <DIO_writePin>
+ 832:	21 96       	adiw	r28, 0x01	; 1
+ 834:	0c 5f       	subi	r16, 0xFC	; 252
+ 836:	1f 4f       	sbci	r17, 0xFF	; 255
+			DIO_writePin(& g_s_dataConfig[loop]);
+		}
+		/* toggle enable pin for LCD to read data */
+		LCD_enToggle();
+		/* send the low nibbles using the same method */
+		for (loop=0;loop<LCD_IO_MODE;loop++)
+ 838:	c4 30       	cpi	r28, 0x04	; 4
+ 83a:	d1 05       	cpc	r29, r1
+ 83c:	61 f7       	brne	.-40     	; 0x816 <LCD_write+0xaa>
+[in] void:
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+static inline void LCD_enHigh(void)
+{
+	g_s_ctrlConfig[2].s_value = LOGIC_HIGH;
+ 83e:	81 e0       	ldi	r24, 0x01	; 1
+ 840:	80 93 a2 01 	sts	0x01A2, r24
+	DIO_writePin(& g_s_ctrlConfig[2]);
+ 844:	8f e9       	ldi	r24, 0x9F	; 159
+ 846:	91 e0       	ldi	r25, 0x01	; 1
+ 848:	0e 94 cb 00 	call	0x196	; 0x196 <DIO_writePin>
+ 84c:	8f ec       	ldi	r24, 0xCF	; 207
+ 84e:	97 e0       	ldi	r25, 0x07	; 7
+ 850:	01 97       	sbiw	r24, 0x01	; 1
+ 852:	f1 f7       	brne	.-4      	; 0x850 <LCD_write+0xe4>
+ 854:	00 c0       	rjmp	.+0      	; 0x856 <LCD_write+0xea>
+ 856:	00 00       	nop
+[in] void:
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+static inline void LCD_enLow(void)
+{
+	g_s_ctrlConfig[2].s_value = LOGIC_LOW;
+ 858:	10 92 a2 01 	sts	0x01A2, r1
+	DIO_writePin(& g_s_ctrlConfig[2]);
+ 85c:	8f e9       	ldi	r24, 0x9F	; 159
+ 85e:	91 e0       	ldi	r25, 0x01	; 1
+ 860:	0e 94 cb 00 	call	0x196	; 0x196 <DIO_writePin>
+			DIO_writePin(& g_s_dataConfig[loop]);
+		}
+	#endif
+	/* toggle enable pin for LCD to read data */
+	LCD_enToggle();
+}
+ 864:	df 91       	pop	r29
+ 866:	cf 91       	pop	r28
+ 868:	1f 91       	pop	r17
+ 86a:	0f 91       	pop	r16
+ 86c:	ff 90       	pop	r15
+ 86e:	ef 90       	pop	r14
+ 870:	df 90       	pop	r13
+ 872:	cf 90       	pop	r12
+ 874:	08 95       	ret
+
+00000876 <LCD_sendCommand>:
+The command to be executed in the LCD
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+void LCD_sendCommand(uint8 a_command)
+{
+	LCD_write(a_command, 0);
+ 876:	60 e0       	ldi	r22, 0x00	; 0
+ 878:	0e 94 b6 03 	call	0x76c	; 0x76c <LCD_write>
+ 87c:	08 95       	ret
+
+0000087e <LCD_init>:
+[in] a_cursorState:
+a_cursorState is uint8 for the cursor state, LCD_CURSOR_OFF or LCD_CURSOR_ON
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+void LCD_init(uint8 a_cursorState)
+{
+ 87e:	cf 93       	push	r28
+ 880:	c8 2f       	mov	r28, r24
+		LCD_dataConfig(LCD_DATA1_PORT, LCD_DATA1_PIN);
+		LCD_dataConfig(LCD_DATA2_PORT, LCD_DATA2_PIN);
+		LCD_dataConfig(LCD_DATA3_PORT, LCD_DATA3_PIN);
+	#endif
+	/* Configure data pins from 4 to 7 whether its defined as 8-bit mode or 4-bit mode */
+	LCD_dataConfig(LCD_DATA4_PORT, LCD_DATA4_PIN);
+ 882:	64 e0       	ldi	r22, 0x04	; 4
+ 884:	83 e4       	ldi	r24, 0x43	; 67
+ 886:	0e 94 88 03 	call	0x710	; 0x710 <LCD_dataConfig>
+	LCD_dataConfig(LCD_DATA5_PORT, LCD_DATA5_PIN);
+ 88a:	65 e0       	ldi	r22, 0x05	; 5
+ 88c:	83 e4       	ldi	r24, 0x43	; 67
+ 88e:	0e 94 88 03 	call	0x710	; 0x710 <LCD_dataConfig>
+	LCD_dataConfig(LCD_DATA6_PORT, LCD_DATA6_PIN);
+ 892:	66 e0       	ldi	r22, 0x06	; 6
+ 894:	83 e4       	ldi	r24, 0x43	; 67
+ 896:	0e 94 88 03 	call	0x710	; 0x710 <LCD_dataConfig>
+	LCD_dataConfig(LCD_DATA7_PORT, LCD_DATA7_PIN);
+ 89a:	67 e0       	ldi	r22, 0x07	; 7
+ 89c:	83 e4       	ldi	r24, 0x43	; 67
+ 89e:	0e 94 88 03 	call	0x710	; 0x710 <LCD_dataConfig>
+	
+	/* fill port and pin number for RS, RW, EN LCD control pins */
+	LCD_ctrlConfig(LCD_RS_PORT, LCD_RS_PIN);
+ 8a2:	60 e0       	ldi	r22, 0x00	; 0
+ 8a4:	83 e4       	ldi	r24, 0x43	; 67
+ 8a6:	0e 94 9f 03 	call	0x73e	; 0x73e <LCD_ctrlConfig>
+	LCD_ctrlConfig(LCD_RW_PORT, LCD_RW_PIN);
+ 8aa:	61 e0       	ldi	r22, 0x01	; 1
+ 8ac:	83 e4       	ldi	r24, 0x43	; 67
+ 8ae:	0e 94 9f 03 	call	0x73e	; 0x73e <LCD_ctrlConfig>
+	LCD_ctrlConfig(LCD_EN_PORT, LCD_EN_PIN);
+ 8b2:	62 e0       	ldi	r22, 0x02	; 2
+ 8b4:	83 e4       	ldi	r24, 0x43	; 67
+ 8b6:	0e 94 9f 03 	call	0x73e	; 0x73e <LCD_ctrlConfig>
+		/*	Prepare LCD to understand the 4-bit mode
+		*	When the power supply is given to LCD, it remains by default in 8-bit mode. 
+		*	If 0x20 is sent, lower nibble will not be received by LCD because four data lines (D4-D7) are connected, 
+		*	so 0x02 is sent instead of 0x20 to initiate it for 4-bit mode 
+		*/
+		LCD_sendCommand(LCD_FUNCTION_2_LINES);	
+ 8ba:	82 e0       	ldi	r24, 0x02	; 2
+ 8bc:	0e 94 3b 04 	call	0x876	; 0x876 <LCD_sendCommand>
+	#endif
+	
+	/*  LCD_FUNCTION_DEFAULT is defined in the header file based on number of lines and LCD_IO_MODE type
+	*	(1 or 2)-line lcd + (4 or 8)-bit Data Mode + 5*7 dot display Mode 
+	*/
+	LCD_sendCommand(LCD_FUNCTION_DEFAULT);
+ 8c0:	88 e2       	ldi	r24, 0x28	; 40
+ 8c2:	0e 94 3b 04 	call	0x876	; 0x876 <LCD_sendCommand>
+	
+	/* Setting cursor state ON/OFF */
+	LCD_sendCommand(a_cursorState);
+ 8c6:	8c 2f       	mov	r24, r28
+ 8c8:	0e 94 3b 04 	call	0x876	; 0x876 <LCD_sendCommand>
+	/* clear LCD at the beginning */
+	LCD_sendCommand(LCD_CLR); 
+ 8cc:	81 e0       	ldi	r24, 0x01	; 1
+ 8ce:	0e 94 3b 04 	call	0x876	; 0x876 <LCD_sendCommand>
+}
+ 8d2:	cf 91       	pop	r28
+ 8d4:	08 95       	ret
+
+000008d6 <LCD_displayCharacter>:
+The command to be executed in the LCD
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+void LCD_displayCharacter(uint8 a_dataCharacter)
+{
+	LCD_write(a_dataCharacter, 1);
+ 8d6:	61 e0       	ldi	r22, 0x01	; 1
+ 8d8:	0e 94 b6 03 	call	0x76c	; 0x76c <LCD_write>
+ 8dc:	08 95       	ret
+
+000008de <LCD_displayString>:
+[in] const uint8 *a_dataString_Ptr:
+a_dataString_Ptr is a pointer to character
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+void LCD_displayString(const uint8 *a_dataString_Ptr)
+{
+ 8de:	cf 93       	push	r28
+ 8e0:	df 93       	push	r29
+ 8e2:	ec 01       	movw	r28, r24
+	while(*a_dataString_Ptr != '\0')
+ 8e4:	88 81       	ld	r24, Y
+ 8e6:	88 23       	and	r24, r24
+ 8e8:	31 f0       	breq	.+12     	; 0x8f6 <LCD_displayString+0x18>
+ 8ea:	21 96       	adiw	r28, 0x01	; 1
+	{
+		/* Send character to LCD_displayCharacter function then post increment the pointer */
+		LCD_displayCharacter(*a_dataString_Ptr++);
+ 8ec:	0e 94 6b 04 	call	0x8d6	; 0x8d6 <LCD_displayCharacter>
+a_dataString_Ptr is a pointer to character
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+void LCD_displayString(const uint8 *a_dataString_Ptr)
+{
+	while(*a_dataString_Ptr != '\0')
+ 8f0:	89 91       	ld	r24, Y+
+ 8f2:	81 11       	cpse	r24, r1
+ 8f4:	fb cf       	rjmp	.-10     	; 0x8ec <LCD_displayString+0xe>
+	{
+		/* Send character to LCD_displayCharacter function then post increment the pointer */
+		LCD_displayCharacter(*a_dataString_Ptr++);
+	}
+}
+ 8f6:	df 91       	pop	r29
+ 8f8:	cf 91       	pop	r28
+ 8fa:	08 95       	ret
+
+000008fc <LCD_displayNumber>:
+		10 represent decimal, 
+		16 represent hexadecimal, ..etc
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+void LCD_displayNumber(sint32 a_data, uint8 a_base)
+{
+ 8fc:	4f 92       	push	r4
+ 8fe:	5f 92       	push	r5
+ 900:	6f 92       	push	r6
+ 902:	7f 92       	push	r7
+ 904:	af 92       	push	r10
+ 906:	bf 92       	push	r11
+ 908:	cf 92       	push	r12
+ 90a:	df 92       	push	r13
+ 90c:	ef 92       	push	r14
+ 90e:	ff 92       	push	r15
+ 910:	0f 93       	push	r16
+ 912:	1f 93       	push	r17
+ 914:	cf 93       	push	r28
+ 916:	df 93       	push	r29
+ 918:	cd b7       	in	r28, 0x3d	; 61
+ 91a:	de b7       	in	r29, 0x3e	; 62
+ 91c:	64 97       	sbiw	r28, 0x14	; 20
+ 91e:	0f b6       	in	r0, 0x3f	; 63
+ 920:	f8 94       	cli
+ 922:	de bf       	out	0x3e, r29	; 62
+ 924:	0f be       	out	0x3f, r0	; 63
+ 926:	cd bf       	out	0x3d, r28	; 61
+ 928:	69 8b       	std	Y+17, r22	; 0x11
+ 92a:	7a 8b       	std	Y+18, r23	; 0x12
+ 92c:	8b 8b       	std	Y+19, r24	; 0x13
+ 92e:	9c 8b       	std	Y+20, r25	; 0x14
+	static uint8 num[] = "0123456789abcdefghijklmnopqrstuvwxyz";
+	uint8* wstr_Ptr = a_str_Ptr;
+	sint32 sign;
+	
+	/* check if base is Validate or no */
+	if (a_base<2 || a_base>35)
+ 930:	8e ef       	ldi	r24, 0xFE	; 254
+ 932:	84 0f       	add	r24, r20
+ 934:	82 32       	cpi	r24, 0x22	; 34
+ 936:	10 f0       	brcs	.+4      	; 0x93c <LCD_displayNumber+0x40>
+	{ 
+		*wstr_Ptr='\0'; 
+ 938:	19 82       	std	Y+1, r1	; 0x01
+ 93a:	59 c0       	rjmp	.+178    	; 0x9ee <LCD_displayNumber+0xf2>
+ 93c:	89 89       	ldd	r24, Y+17	; 0x11
+ 93e:	9a 89       	ldd	r25, Y+18	; 0x12
+ 940:	ab 89       	ldd	r26, Y+19	; 0x13
+ 942:	bc 89       	ldd	r27, Y+20	; 0x14
+ 944:	bb 23       	and	r27, r27
+ 946:	3c f4       	brge	.+14     	; 0x956 <LCD_displayNumber+0x5a>
+ 948:	b0 95       	com	r27
+ 94a:	a0 95       	com	r26
+ 94c:	90 95       	com	r25
+ 94e:	81 95       	neg	r24
+ 950:	9f 4f       	sbci	r25, 0xFF	; 255
+ 952:	af 4f       	sbci	r26, 0xFF	; 255
+ 954:	bf 4f       	sbci	r27, 0xFF	; 255
+ 956:	bc 01       	movw	r22, r24
+ 958:	cd 01       	movw	r24, r26
+	static uint8 num[] = "0123456789abcdefghijklmnopqrstuvwxyz";
+	uint8* wstr_Ptr = a_str_Ptr;
+	sint32 sign;
+	
+	/* check if base is Validate or no */
+	if (a_base<2 || a_base>35)
+ 95a:	8e 01       	movw	r16, r28
+ 95c:	0f 5f       	subi	r16, 0xFF	; 255
+ 95e:	1f 4f       	sbci	r17, 0xFF	; 255
+	}
+	
+	/* Conversion. Number is reversed. */
+	do
+	{ 
+		*wstr_Ptr++ = num[a_value%a_base]; 
+ 960:	44 2e       	mov	r4, r20
+ 962:	51 2c       	mov	r5, r1
+ 964:	61 2c       	mov	r6, r1
+ 966:	71 2c       	mov	r7, r1
+ 968:	58 01       	movw	r10, r16
+ 96a:	78 01       	movw	r14, r16
+ 96c:	2f ef       	ldi	r18, 0xFF	; 255
+ 96e:	e2 1a       	sub	r14, r18
+ 970:	f2 0a       	sbc	r15, r18
+ 972:	67 01       	movw	r12, r14
+ 974:	a3 01       	movw	r20, r6
+ 976:	92 01       	movw	r18, r4
+ 978:	0e 94 41 05 	call	0xa82	; 0xa82 <__divmodsi4>
+ 97c:	fb 01       	movw	r30, r22
+ 97e:	e2 59       	subi	r30, 0x92	; 146
+ 980:	fe 4f       	sbci	r31, 0xFE	; 254
+ 982:	80 81       	ld	r24, Z
+ 984:	d8 01       	movw	r26, r16
+ 986:	8c 93       	st	X, r24
+	}while(a_value /= a_base);
+ 988:	62 2f       	mov	r22, r18
+ 98a:	73 2f       	mov	r23, r19
+ 98c:	84 2f       	mov	r24, r20
+ 98e:	95 2f       	mov	r25, r21
+ 990:	61 15       	cp	r22, r1
+ 992:	71 05       	cpc	r23, r1
+ 994:	81 05       	cpc	r24, r1
+ 996:	91 05       	cpc	r25, r1
+ 998:	11 f0       	breq	.+4      	; 0x99e <LCD_displayNumber+0xa2>
+ 99a:	87 01       	movw	r16, r14
+ 99c:	e5 cf       	rjmp	.-54     	; 0x968 <LCD_displayNumber+0x6c>
+	
+	if(sign<0)
+ 99e:	09 89       	ldd	r16, Y+17	; 0x11
+ 9a0:	1a 89       	ldd	r17, Y+18	; 0x12
+ 9a2:	2b 89       	ldd	r18, Y+19	; 0x13
+ 9a4:	3c 89       	ldd	r19, Y+20	; 0x14
+ 9a6:	33 23       	and	r19, r19
+ 9a8:	44 f4       	brge	.+16     	; 0x9ba <LCD_displayNumber+0xbe>
+	{ 
+		*wstr_Ptr++='-';
+ 9aa:	65 01       	movw	r12, r10
+ 9ac:	12 e0       	ldi	r17, 0x02	; 2
+ 9ae:	c1 0e       	add	r12, r17
+ 9b0:	d1 1c       	adc	r13, r1
+ 9b2:	8d e2       	ldi	r24, 0x2D	; 45
+ 9b4:	d5 01       	movw	r26, r10
+ 9b6:	11 96       	adiw	r26, 0x01	; 1
+ 9b8:	8c 93       	st	X, r24
+	}
+	*wstr_Ptr='\0';
+ 9ba:	f6 01       	movw	r30, r12
+ 9bc:	10 82       	st	Z, r1
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+static void strreverse(uint8* a_begin_Ptr, uint8* a_end_Ptr) {
+	
+	uint8 aux;
+	while(a_end_Ptr>a_begin_Ptr)
+ 9be:	9e 01       	movw	r18, r28
+ 9c0:	2f 5f       	subi	r18, 0xFF	; 255
+ 9c2:	3f 4f       	sbci	r19, 0xFF	; 255
+ 9c4:	c6 01       	movw	r24, r12
+ 9c6:	01 97       	sbiw	r24, 0x01	; 1
+ 9c8:	28 17       	cp	r18, r24
+ 9ca:	39 07       	cpc	r19, r25
+ 9cc:	80 f4       	brcc	.+32     	; 0x9ee <LCD_displayNumber+0xf2>
+ 9ce:	c9 01       	movw	r24, r18
+ 9d0:	a9 01       	movw	r20, r18
+	{
+		aux				=	*a_end_Ptr;
+ 9d2:	22 91       	ld	r18, -Z
+		*a_end_Ptr--	=	*a_begin_Ptr;
+ 9d4:	da 01       	movw	r26, r20
+ 9d6:	3d 91       	ld	r19, X+
+ 9d8:	ad 01       	movw	r20, r26
+ 9da:	30 83       	st	Z, r19
+		*a_begin_Ptr++	=	aux;
+ 9dc:	dc 01       	movw	r26, r24
+ 9de:	2d 93       	st	X+, r18
+ 9e0:	cd 01       	movw	r24, r26
+ 9e2:	9f 01       	movw	r18, r30
+ 9e4:	21 50       	subi	r18, 0x01	; 1
+ 9e6:	31 09       	sbc	r19, r1
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+static void strreverse(uint8* a_begin_Ptr, uint8* a_end_Ptr) {
+	
+	uint8 aux;
+	while(a_end_Ptr>a_begin_Ptr)
+ 9e8:	42 17       	cp	r20, r18
+ 9ea:	53 07       	cpc	r21, r19
+ 9ec:	90 f3       	brcs	.-28     	; 0x9d2 <LCD_displayNumber+0xd6>
+{
+	/* String to hold the ascii result */
+	uint8 buff[LCD_DISP_LENGTH];
+	/* Base can be 10 for decimal, 8 for octal, ..etc, can be from 2 to 35 */
+	itoaAnsiC(a_data,buff,a_base);
+	LCD_displayString(buff);
+ 9ee:	ce 01       	movw	r24, r28
+ 9f0:	01 96       	adiw	r24, 0x01	; 1
+ 9f2:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+}
+ 9f6:	64 96       	adiw	r28, 0x14	; 20
+ 9f8:	0f b6       	in	r0, 0x3f	; 63
+ 9fa:	f8 94       	cli
+ 9fc:	de bf       	out	0x3e, r29	; 62
+ 9fe:	0f be       	out	0x3f, r0	; 63
+ a00:	cd bf       	out	0x3d, r28	; 61
+ a02:	df 91       	pop	r29
+ a04:	cf 91       	pop	r28
+ a06:	1f 91       	pop	r17
+ a08:	0f 91       	pop	r16
+ a0a:	ff 90       	pop	r15
+ a0c:	ef 90       	pop	r14
+ a0e:	df 90       	pop	r13
+ a10:	cf 90       	pop	r12
+ a12:	bf 90       	pop	r11
+ a14:	af 90       	pop	r10
+ a16:	7f 90       	pop	r7
+ a18:	6f 90       	pop	r6
+ a1a:	5f 90       	pop	r5
+ a1c:	4f 90       	pop	r4
+ a1e:	08 95       	ret
+
+00000a20 <LCD_goToRowColumn>:
+{
+	/* local variable to hold the LCD address value for the cursor */
+	uint8 address;
+	
+	/* first of all calculate the required address */
+	switch(a_row)
+ a20:	82 30       	cpi	r24, 0x02	; 2
+ a22:	31 f0       	breq	.+12     	; 0xa30 <LCD_goToRowColumn+0x10>
+ a24:	83 30       	cpi	r24, 0x03	; 3
+ a26:	31 f0       	breq	.+12     	; 0xa34 <LCD_goToRowColumn+0x14>
+ a28:	81 30       	cpi	r24, 0x01	; 1
+ a2a:	29 f4       	brne	.+10     	; 0xa36 <LCD_goToRowColumn+0x16>
+	{
+		case 0:
+				address = a_col + LCD_START_LINE1;
+				break;
+		case 1:
+				address = a_col + LCD_START_LINE2;
+ a2c:	60 5c       	subi	r22, 0xC0	; 192
+				break;
+ a2e:	03 c0       	rjmp	.+6      	; 0xa36 <LCD_goToRowColumn+0x16>
+		case 2:
+				address = a_col + LCD_START_LINE3;
+ a30:	60 5f       	subi	r22, 0xF0	; 240
+				break;
+ a32:	01 c0       	rjmp	.+2      	; 0xa36 <LCD_goToRowColumn+0x16>
+		case 3:
+				address = a_col + LCD_START_LINE4;
+ a34:	60 5b       	subi	r22, 0xB0	; 176
+				break;
+	}					
+	/* to write to a specific address in the LCD 
+	 * we need to apply the corresponding command 0b10000000+address 
+	*/
+	LCD_sendCommand(address|SET_CURSOR_LOCATION); 
+ a36:	86 2f       	mov	r24, r22
+ a38:	80 68       	ori	r24, 0x80	; 128
+ a3a:	0e 94 3b 04 	call	0x876	; 0x876 <LCD_sendCommand>
+ a3e:	08 95       	ret
+
+00000a40 <LCD_displayStringRowColumn>:
+uint8 a_col, the column number
+const char *a_str_Ptr, pointer to the sting to be displayed character by charater using displayCharacter function 
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+void LCD_displayStringRowColumn(uint8 a_row, uint8 a_col, const uint8 *a_str_Ptr)
+{
+ a40:	cf 93       	push	r28
+ a42:	df 93       	push	r29
+ a44:	ea 01       	movw	r28, r20
+	/* go to to the required LCD position */
+	LCD_goToRowColumn(a_row, a_col);
+ a46:	0e 94 10 05 	call	0xa20	; 0xa20 <LCD_goToRowColumn>
+	/* display the string */
+	LCD_displayString(a_str_Ptr);
+ a4a:	ce 01       	movw	r24, r28
+ a4c:	0e 94 6f 04 	call	0x8de	; 0x8de <LCD_displayString>
+}
+ a50:	df 91       	pop	r29
+ a52:	cf 91       	pop	r28
+ a54:	08 95       	ret
+
+00000a56 <LCD_clearScreen>:
+[Returns] : This function return void
+--------------------------------------------------------------------------------------------------------------- */
+void LCD_clearScreen(void)
+{
+	/* clear display */
+	LCD_sendCommand(LCD_CLR);
+ a56:	81 e0       	ldi	r24, 0x01	; 1
+ a58:	0e 94 3b 04 	call	0x876	; 0x876 <LCD_sendCommand>
+ a5c:	08 95       	ret
+
+00000a5e <UART_init>:
+#include "UART.h"
+ 
+void UART_init(void)
+{
+
+	UCSRA = (1<<U2X); //double transmission speed
+ a5e:	82 e0       	ldi	r24, 0x02	; 2
+ a60:	8b b9       	out	0x0b, r24	; 11
+	
+	UCSRB = (1<<RXEN) | (1<<TXEN); //enable UART as transmitter and receiver.
+ a62:	88 e1       	ldi	r24, 0x18	; 24
+ a64:	8a b9       	out	0x0a, r24	; 10
+	
+	UCSRC = (1<<URSEL) | (1<<UCSZ0) | (1<<UCSZ1); //8-bit data, No parity, one stop bit and asynch 
+ a66:	86 e8       	ldi	r24, 0x86	; 134
+ a68:	80 bd       	out	0x20, r24	; 32
+	
+	/* baud rate=9600 & Fosc=1MHz -->  UBBR=( Fosc / (8 * baud rate) ) - 1 = 12 */  
+	UBRRH = 0;
+ a6a:	10 bc       	out	0x20, r1	; 32
+	UBRRL = 12; //103
+ a6c:	8c e0       	ldi	r24, 0x0C	; 12
+ a6e:	89 b9       	out	0x09, r24	; 9
+ a70:	08 95       	ret
+
+00000a72 <UART_sendByte>:
+}
+	
+void UART_sendByte(const char data)
+{
+	while(!(UCSRA & (1<<UDRE))){} //UDRE flag is set when the buffer is empty and ready for transmitting a new byte so wait until this flag is set to one.
+ a72:	5d 9b       	sbis	0x0b, 5	; 11
+ a74:	fe cf       	rjmp	.-4      	; 0xa72 <UART_sendByte>
+	UDR = data;
+ a76:	8c b9       	out	0x0c, r24	; 12
+ a78:	08 95       	ret
+
+00000a7a <UART_recieveByte>:
+}
+
+char UART_recieveByte(void)
+{
+	while(!(UCSRA & (1<<RXC))){} //RXC flag is set when the UART receive data so until this flag is set to one
+ a7a:	5f 9b       	sbis	0x0b, 7	; 11
+ a7c:	fe cf       	rjmp	.-4      	; 0xa7a <UART_recieveByte>
+    return UDR;		
+ a7e:	8c b1       	in	r24, 0x0c	; 12
+}
+ a80:	08 95       	ret
+
+00000a82 <__divmodsi4>:
+ a82:	05 2e       	mov	r0, r21
+ a84:	97 fb       	bst	r25, 7
+ a86:	1e f4       	brtc	.+6      	; 0xa8e <__divmodsi4+0xc>
+ a88:	00 94       	com	r0
+ a8a:	0e 94 58 05 	call	0xab0	; 0xab0 <__negsi2>
+ a8e:	57 fd       	sbrc	r21, 7
+ a90:	07 d0       	rcall	.+14     	; 0xaa0 <__divmodsi4_neg2>
+ a92:	0e 94 66 05 	call	0xacc	; 0xacc <__udivmodsi4>
+ a96:	07 fc       	sbrc	r0, 7
+ a98:	03 d0       	rcall	.+6      	; 0xaa0 <__divmodsi4_neg2>
+ a9a:	4e f4       	brtc	.+18     	; 0xaae <__divmodsi4_exit>
+ a9c:	0c 94 58 05 	jmp	0xab0	; 0xab0 <__negsi2>
+
+00000aa0 <__divmodsi4_neg2>:
+ aa0:	50 95       	com	r21
+ aa2:	40 95       	com	r20
+ aa4:	30 95       	com	r19
+ aa6:	21 95       	neg	r18
+ aa8:	3f 4f       	sbci	r19, 0xFF	; 255
+ aaa:	4f 4f       	sbci	r20, 0xFF	; 255
+ aac:	5f 4f       	sbci	r21, 0xFF	; 255
+
+00000aae <__divmodsi4_exit>:
+ aae:	08 95       	ret
+
+00000ab0 <__negsi2>:
+ ab0:	90 95       	com	r25
+ ab2:	80 95       	com	r24
+ ab4:	70 95       	com	r23
+ ab6:	61 95       	neg	r22
+ ab8:	7f 4f       	sbci	r23, 0xFF	; 255
+ aba:	8f 4f       	sbci	r24, 0xFF	; 255
+ abc:	9f 4f       	sbci	r25, 0xFF	; 255
+ abe:	08 95       	ret
+
+00000ac0 <__tablejump2__>:
+ ac0:	ee 0f       	add	r30, r30
+ ac2:	ff 1f       	adc	r31, r31
+
+00000ac4 <__tablejump__>:
+ ac4:	05 90       	lpm	r0, Z+
+ ac6:	f4 91       	lpm	r31, Z
+ ac8:	e0 2d       	mov	r30, r0
+ aca:	09 94       	ijmp
+
+00000acc <__udivmodsi4>:
+ acc:	a1 e2       	ldi	r26, 0x21	; 33
+ ace:	1a 2e       	mov	r1, r26
+ ad0:	aa 1b       	sub	r26, r26
+ ad2:	bb 1b       	sub	r27, r27
+ ad4:	fd 01       	movw	r30, r26
+ ad6:	0d c0       	rjmp	.+26     	; 0xaf2 <__udivmodsi4_ep>
+
+00000ad8 <__udivmodsi4_loop>:
+ ad8:	aa 1f       	adc	r26, r26
+ ada:	bb 1f       	adc	r27, r27
+ adc:	ee 1f       	adc	r30, r30
+ ade:	ff 1f       	adc	r31, r31
+ ae0:	a2 17       	cp	r26, r18
+ ae2:	b3 07       	cpc	r27, r19
+ ae4:	e4 07       	cpc	r30, r20
+ ae6:	f5 07       	cpc	r31, r21
+ ae8:	20 f0       	brcs	.+8      	; 0xaf2 <__udivmodsi4_ep>
+ aea:	a2 1b       	sub	r26, r18
+ aec:	b3 0b       	sbc	r27, r19
+ aee:	e4 0b       	sbc	r30, r20
+ af0:	f5 0b       	sbc	r31, r21
+
+00000af2 <__udivmodsi4_ep>:
+ af2:	66 1f       	adc	r22, r22
+ af4:	77 1f       	adc	r23, r23
+ af6:	88 1f       	adc	r24, r24
+ af8:	99 1f       	adc	r25, r25
+ afa:	1a 94       	dec	r1
+ afc:	69 f7       	brne	.-38     	; 0xad8 <__udivmodsi4_loop>
+ afe:	60 95       	com	r22
+ b00:	70 95       	com	r23
+ b02:	80 95       	com	r24
+ b04:	90 95       	com	r25
+ b06:	9b 01       	movw	r18, r22
+ b08:	ac 01       	movw	r20, r24
+ b0a:	bd 01       	movw	r22, r26
+ b0c:	cf 01       	movw	r24, r30
+ b0e:	08 95       	ret
+
+00000b10 <_exit>:
+ b10:	f8 94       	cli
+
+00000b12 <__stop_program>:
+ b12:	ff cf       	rjmp	.-2      	; 0xb12 <__stop_program>
